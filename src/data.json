@@ -1,0 +1,72 @@
+{
+    "leftHalf": {},
+    "rightHalf": {
+        "bio": "Thanks for dropping by. Little bit about myself, I'm a Computer Science Graduate from SIU Carbondale, IL specialized in Mobile and Web Development. I worked on building a web platform for the Aviation Department at SIU while I was working as a Research Assistant. We were able to successfully publish a journal on utilizing the platform to identify Hard landing and Near miss incidents. This helped me in securing a Full Time Job at Charles Schwab as an Associate Software Developer. I believe that Purity in Heart, Clarity in Mind, Sincerity in Action yield a Surity to Success. I play table tennis and dedicate most of my free time towards playing and improving. Meet me with a chess set and cold coffee and we'll be friends.",
+        "experiences": [
+            {
+                "key": 1,
+                "timeline": "SEP-15 to DEC-17",
+                "designation": "Web Developer",
+                "company": "Infosys Technologies",
+                "summary": "The project was started by Apple with the goal of making the User Interface of their website faster, easier and feature rich. The merchandize pages were designed using CanJS, an opensource JavaScript Framework and the transaction pages using CoherentJS, an Apple designed JS Framework. It was later proposed to redesign various transaction pages such as Checkout, Shipping, Payment, Confirmation using the latest ReactJS, JSX and EcmaScript6.",
+                "links": ["React", "Node", "Recon", "Orbit", "ES6", "TypeScript", "Jasmine", "Gulp"],
+                "technologies": ["", "", ""]
+              },
+              {
+                "key": 2,
+                "timeline": "APR-20 to OCT-22",
+                "designation": "Software Developer",
+                "company": "Charles Schwab",
+                "summary": "It is a tool developed and integrated with the web application that calculates how ones portfolio is performing by comparing the returns against the standard benchmarks. Legacy workers that supported the core backend functionality were moved into pipeline based architecture and .NET Core, MongoDB were used on the backend.",
+                "links": [".NET Core", "Mongo DB", "Aerospike", "Postman", "Parasoft SOA", "Control-M", "Rabbit-MQ", "Splunk", "Visual Studio", "Bamboo"],
+                "technologies": ["", "", ""]
+              },
+              {
+                "key": 3,
+                "timeline": "OCT-22 to PRESENT",
+                "designation": "C# Engineer",
+                "company": "Deutsche Bank",
+                "summary": "Working on an in-house tool to perform value adjustment, trade extraction, trade selection for various counterparties associated with Deutsche Bank. Decommissonned an expensive tool to save company around 300K Euros.",
+                "links": [".NET Framework", ".NET Core", "WPF", "WCF", "Oracle", "Postman", "Teamcity", "Visual Studio", "Solace Queue", "CRON Triggers"],
+                "technologies": ["", "", ""]
+              }
+        ],
+        "techStacks": ["Angular","Apple","Bamboo","BitBucket","Bootstrap","Bulma","CSharp","CSS3","Express",
+        "GitHub","GoogleCloud","HTML5","IntelliJIDEA","Jasmine","JavaScript","Jira","jQuery",
+        "LaTeX","Linux","NETCore","Nodejs","Nodemon","NPM","NuGet","ObjectiveC","Oracle",
+        "Python","RabbitMQ","Reacter","Redux","Splunk","SQLDeveloper","TypeScript"],
+        "projects": [
+          {
+            "key": 11,
+            "name": "Checkout Redesign",
+            "client": "Apple",
+            "description": "An Apple project where a ground up redesign of their merchandizing and transaction parts of website was carried out. Used a derivative from work of React called Recon, stitched to Apple's requirements, to produce new-generation website with faster response times.",
+            "links": []
+          },
+          {
+            "key": 12,
+            "name": "Flight Data Monitoring",
+            "client": "SIUC Aviation",
+            "description": "A web application that was created to gather student pilots data and perform analysis and grade the students. Incidents such as HardLanding and NearMiss incidents could be corrected and help students in a better way.",
+            "links": []
+          },
+          {
+            "key": 13,
+            "name": "Performance Reporting Platform",
+            "client": "Charles Schwab",
+            "description": "The project aimed to support the customers/financial advisors to calculate how the portfolio is performing by comparing the returns against the standard benchmarks. Legacy workers that supported the core backend functionality were moved into pipeline based architecture.",
+            "links": []
+          },
+          {
+            "key": 14,
+            "name": "Xva Manager",
+            "client": "Deutsche Bank",
+            "description": "An inhouse application that's used by the desk users at the bank to perform trade extraction, trade selection, reference data viewing and perform some enrichment before sending the data over for risk calculation and assessment.",
+            "links": []
+          }
+        ]
+    }
+}
+
+
+

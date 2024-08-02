@@ -1,0 +1,67 @@
+/* Using Keyframes for animations */
+
+
+/* Experience Material transitions */
+.experience {
+    border-radius: 10px;
+    background-color: rgba(85, 85, 85, 0.25);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.experience:hover {
+    background-color: rgba(85, 85, 85, 0.45);
+    color: #cfe;
+}
+
+
+/* Tech Stack SVG transitions */
+
+.tech-stack {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tech-stack .tech-icon {
+    height: 80px;
+    display: table-cell;
+}
+
+.tech-stack img {
+    width: 40px;
+    filter: grayscale(50%);
+    transition: width 0.1s, filter 0.25s;
+}
+
+.tech-stack img:hover {
+    width: 50px;
+    filter: grayscale(0%);
+}
+
+.tech-stack .tech-tab {
+    text-align: center;
+}
+
+.tech-tab .option {
+    display: inline-block;
+    border-radius: 20px;
+    color: #343;
+    transition: color 0.5s;
+}
+.tech-tab .option:hover {
+    cursor: pointer;
+    color: #898;
+}
+
+.tech-links {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: aqua;
+    color: #eee;
+}
+
+.tech-links a {
+    text-decoration: none;
+    color: #343;
+    font-size: 0.8rem;
+}
