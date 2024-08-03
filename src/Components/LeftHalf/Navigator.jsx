@@ -65,16 +65,16 @@ export class Navigator extends Component {
     return (
       <div className='navigator'>
         <ul>
-            <li className={this.state.isActiveAbout ? 'mt-5 selected-navigator' : 'mt-5'}>
+            <li className={this.state.isActiveAbout ? 'mt-4 selected-navigator' : 'mt-4'}>
                 <a className='h6 text-uppercase text-decoration-none' target='_blank' onClick={this.scrollToSection}>About</a>
             </li>
-            <li className={this.state.isActiveExperience ? 'mt-5 selected-navigator' : 'mt-5'}>
+            <li className={this.state.isActiveExperience ? 'mt-4 selected-navigator' : 'mt-4'}>
                 <a className='h6 text-uppercase text-decoration-none' target='_blank' onClick={this.scrollToSection}>Experience</a>
             </li>
-            <li className={this.state.isActiveTechStack ? 'mt-5 selected-navigator' : 'mt-5'}>
+            <li className={this.state.isActiveTechStack ? 'mt-4 selected-navigator' : 'mt-4'}>
                 <a className='h6 text-uppercase text-decoration-none' target='_blank' onClick={this.scrollToSection}>Tech Stack</a>
             </li>
-            <li className={this.state.isActiveProjects ? 'mt-5 selected-navigator' : 'mt-5'}>
+            <li className={this.state.isActiveProjects ? 'mt-4 selected-navigator' : 'mt-4'}>
                 <a className='h6 text-uppercase text-decoration-none' target='_blank' onClick={this.scrollToSection}>Projects</a>
             </li>
         </ul>        
