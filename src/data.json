@@ -1,14 +1,14 @@
 {
     "leftHalf": {},
     "rightHalf": {
-        "bio": "Thanks for dropping by. Little bit about myself, I'm a Computer Science Graduate from SIU Carbondale, IL specialized in Mobile and Web Development. I worked on building a web platform for the Aviation Department at SIU while I was working as a Research Assistant. We were able to successfully publish a journal on utilizing the platform to identify Hard landing and Near miss incidents. This helped me in securing a Full Time Job at Charles Schwab as an Associate Software Developer. I believe that Purity in Heart, Clarity in Mind, Sincerity in Action yield a Surity to Success. I play table tennis and dedicate most of my free time towards playing and improving. Meet me with a chess set and cold coffee and we'll be friends.",
+        "bio": "My career journey started at Infosys in India, where I worked on front-end development for Apple, and continued at Charles Schwab before joining Deutsche Bank. I'm passionate about staying at the forefront of technology and enjoy the challenges it brings. Outside of work, I'm dedicated to table tennis, where I've turned my enthusiasm into skill through consistent practice and competition. Balancing my professional life with my love for the sport, I also make time to travel and stay fit.",
         "experiences": [
             {
                 "key": 1,
                 "timeline": "SEP-15 to DEC-17",
                 "designation": "Web Developer",
                 "company": "Infosys Technologies",
-                "summary": "The project was started by Apple with the goal of making the User Interface of their website faster, easier and feature rich. The merchandize pages were designed using CanJS, an opensource JavaScript Framework and the transaction pages using CoherentJS, an Apple designed JS Framework. It was later proposed to redesign various transaction pages such as Checkout, Shipping, Payment, Confirmation using the latest ReactJS, JSX and EcmaScript6.",
+                "summary": "Analyzed business requirements and participated in review meetings. Designed and developed responsive cross-platform web pages for Safari, Chrome, Firefox, and IE using HTML5, CSS3, Sass, and ES6. Ensured code quality and modularity according to client standards. Created and organized test cases with the Jasmine framework. Utilized NodeJS and npm extensively in the build process.",
                 "links": ["React", "Node", "Recon", "Orbit", "ES6", "TypeScript", "Jasmine", "Gulp"],
                 "technologies": ["", "", ""]
               },
@@ -17,7 +17,7 @@
                 "timeline": "APR-20 to OCT-22",
                 "designation": "Software Developer",
                 "company": "Charles Schwab",
-                "summary": "It is a tool developed and integrated with the web application that calculates how ones portfolio is performing by comparing the returns against the standard benchmarks. Legacy workers that supported the core backend functionality were moved into pipeline based architecture and .NET Core, MongoDB were used on the backend.",
+                "summary": "Participated in Agile development, attending daily stand-ups and sprint ceremonies. Collaborated with the Product Owner to understand requirements, designed and proposed solutions, and implemented approved designs. Conducted code reviews, wrote unit and integration tests, and optimized code with QA feedback. Used Bitbucket for version control, verified builds on Bamboo, addressed Veracode scan issues, and deployed services on Harness. Managed PCF cloud instances post-deployment and supported offshore teams.",
                 "links": [".NET Core", "Mongo DB", "Aerospike", "Postman", "Parasoft SOA", "Control-M", "Rabbit-MQ", "Splunk", "Visual Studio", "Bamboo"],
                 "technologies": ["", "", ""]
               },
@@ -26,7 +26,7 @@
                 "timeline": "OCT-22 to PRESENT",
                 "designation": "C# Engineer",
                 "company": "Deutsche Bank",
-                "summary": "Working on an in-house tool to perform value adjustment, trade extraction, trade selection for various counterparties associated with Deutsche Bank. Decommissonned an expensive tool to save company around 300K Euros.",
+                "summary": "Developed an in-house tool for value adjustments, trade extraction, selection, and reference data enrichment for Deutsche Bank's counterparties, integrating it with a risk assessment tool. Successfully decommissioned the Gravity tool, saving the company 300K Euros.",
                 "links": [".NET Framework", ".NET Core", "WPF", "WCF", "Oracle", "Postman", "Teamcity", "Visual Studio", "Solace Queue", "CRON Triggers"],
                 "technologies": ["", "", ""]
               }
@@ -40,7 +40,7 @@
             "key": 11,
             "name": "Checkout Redesign",
             "client": "Apple",
-            "description": "An Apple project where a ground up redesign of their merchandizing and transaction parts of website was carried out. Used a derivative from work of React called Recon, stitched to Apple's requirements, to produce new-generation website with faster response times.",
+            "description": "The project aimed to enhance Apple’s website UI by making it faster, easier to use, and feature-rich. We used CanJS for merchandise pages and CoherentJS for transaction pages. Later, we proposed redesigning key transaction pages—Checkout, Shipping, Payment, and Confirmation—using ReactJS, JSX, and ECMAScript 6.",
             "links": []
           },
           {
@@ -54,14 +54,14 @@
             "key": 13,
             "name": "Performance Reporting Platform",
             "client": "Charles Schwab",
-            "description": "The project aimed to support the customers/financial advisors to calculate how the portfolio is performing by comparing the returns against the standard benchmarks. Legacy workers that supported the core backend functionality were moved into pipeline based architecture.",
+            "description": "The project involved developing a back-end application to evaluate portfolio performance against standard benchmarks. We transitioned legacy backend components to a pipeline-based architecture, utilizing .NET Core and MongoDB for the backend.",
             "links": []
           },
           {
             "key": 14,
             "name": "Xva Manager",
             "client": "Deutsche Bank",
-            "description": "An inhouse application that's used by the desk users at the bank to perform trade extraction, trade selection, reference data viewing and perform some enrichment before sending the data over for risk calculation and assessment.",
+            "description": "In-house tool for trade extraction, selection, and reference data enrichment, used before sending data to the Risk Finder for assessment. It’s a legacy application with WCF technology, WPF front end, and Oracle Database.",
             "links": []
           }
         ]
