@@ -52,6 +52,10 @@
     cursor: pointer;
     color: #898;
 }
+.option-selected {
+    cursor: pointer;
+    color: rgb(13, 212, 13);
+}
 
 .tech-links {
     display: inline-block;

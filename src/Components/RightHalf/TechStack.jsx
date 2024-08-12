@@ -91,7 +91,10 @@ export class TechStack extends Component {
               { "name": VisualStudio, "category": "Tools" },
               { "name": VSCode, "category": "Tools" }
             ],
-            optionSelected: "Languages"
+            optionSelected: "Languages",
+            isActiveLanguages: false,
+            isActiveFrameworks: false,
+            isActiveTools: false
         }
     }
 
@@ -99,15 +102,33 @@ export class TechStack extends Component {
       this.setState({
         optionSelected: event.target.innerHTML
       });
+      switch(event.target.innerHTML) {
+        case "Languages": this.setState({
+          isActiveLanguages: true,
+          isActiveFrameworks: false,
+          isActiveTools: false
+        }); break;
+        case "Frameworks": this.setState({
+          isActiveLanguages: false,
+          isActiveFrameworks: true,
+          isActiveTools: false
+        }); break;
+        case "Tools": this.setState({
+          isActiveLanguages: false,
+          isActiveFrameworks: false,
+          isActiveTools: true
+        }); break;
+        default: break;
+      }
     }
 
     render() {
       return (
         <div id="tech" className='tech-stack row ps-3'>
           <div className='tech-tab row mt-5 mb-5'>
-            <div className='h6 text-uppercase p-2 option col-sm-4' onClick={this.setOptionSelected}>Languages</div>
-            <div className='h6 text-uppercase p-2 option col-sm-4' onClick={this.setOptionSelected}>Frameworks</div>
-            <div className='h6 text-uppercase p-2 option col-sm-4' onClick={this.setOptionSelected}>Tools</div>
+            <div className={this.state.isActiveLanguages ? 'h6 text-uppercase p-2 col-sm-4 option-selected' : 'h6 text-uppercase p-2 col-sm-4 option'} onClick={this.setOptionSelected}>Languages</div>
+            <div className={this.state.isActiveFrameworks ? 'h6 text-uppercase p-2 col-sm-4 option-selected' : 'h6 text-uppercase p-2 col-sm-4 option'} onClick={this.setOptionSelected}>Frameworks</div>
+            <div className={this.state.isActiveTools ? 'h6 text-uppercase p-2 col-sm-4 option-selected' : 'h6 text-uppercase p-2 col-sm-4 option'} onClick={this.setOptionSelected}>Tools</div>
           </div>
           {
             this.state.techStackSvgs.filter((svg) => svg.category === this.state.optionSelected).map((svg) =>
