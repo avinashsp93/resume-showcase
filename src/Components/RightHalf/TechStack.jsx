@@ -92,7 +92,7 @@ export class TechStack extends Component {
               { "name": VSCode, "category": "Tools" }
             ],
             optionSelected: "Languages",
-            isActiveLanguages: false,
+            isActiveLanguages: true,
             isActiveFrameworks: false,
             isActiveTools: false
         }
@@ -130,13 +130,33 @@ export class TechStack extends Component {
             <div className={this.state.isActiveFrameworks ? 'h6 text-uppercase p-2 col-sm-4 option-selected' : 'h6 text-uppercase p-2 col-sm-4 option'} onClick={this.setOptionSelected}>Frameworks</div>
             <div className={this.state.isActiveTools ? 'h6 text-uppercase p-2 col-sm-4 option-selected' : 'h6 text-uppercase p-2 col-sm-4 option'} onClick={this.setOptionSelected}>Tools</div>
           </div>
-          {
-            this.state.techStackSvgs.filter((svg) => svg.category === this.state.optionSelected).map((svg) =>
-              <div key={svg.name} className='tech-icon col-sm-2 mt-2 mb-2 p-4'>
-                <img width='40px' alt='no svg' src={svg.name} />
-              </div>
-            )
-          }
+          <div className="row tech-icons-container">
+            {
+              this.state.techStackSvgs.filter((svg) => svg.category === "Languages").map((svg) =>
+                <div key={svg.name} className={this.state.isActiveLanguages ? 'tech-icon mt-2 mb-2 p-4 animation fade-in' : 'tech-icon mt-2 mb-2 p-4 animation fade-out'}>
+                  <img width='40px' alt='no svg' src={svg.name} />
+                </div>
+              )
+            }
+          </div>
+          <div className="row tech-icons-container">
+            {
+              this.state.techStackSvgs.filter((svg) => svg.category === "Frameworks").map((svg) =>
+                <div key={svg.name} className={this.state.isActiveFrameworks ? 'tech-icon mt-2 mb-2 p-4 animation fade-in' : 'tech-icon mt-2 mb-2 p-4 animation fade-out'}>
+                  <img width='40px' alt='no svg' src={svg.name} />
+                </div>
+              )
+            }
+          </div>
+          <div className="row tech-icons-container">
+            {
+              this.state.techStackSvgs.filter((svg) => svg.category === "Tools").map((svg) =>
+                <div key={svg.name} className={this.state.isActiveTools ? 'tech-icon mt-2 mb-2 p-4 animation fade-in' : 'tech-icon mt-2 mb-2 p-4 animation fade-out'}>
+                  <img width='40px' alt='no svg' src={svg.name} />
+                </div>
+              )
+            }
+          </div>
         </div>
       )
     }
