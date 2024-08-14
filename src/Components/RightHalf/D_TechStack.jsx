@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import Angular from './../../Images/Angular.svg';
 import Apple from './../../Images/Apple.svg';
 import Bamboo from './../../Images/Bamboo.svg';
 import BitBucket from './../../Images/BitBucket.svg';
@@ -9,6 +10,7 @@ import C from './../../Images/C.svg';
 import CSharp from './../../Images/CSharp.svg';
 import CSS3 from './../../Images/CSS3.svg';
 import Express from './../../Images/Express.svg';
+import Git from './../../Images/Git.svg';
 import GitHub from './../../Images/GitHub.svg';
 import GoogleCloud from './../../Images/GoogleCloud.svg';
 import HTML5 from './../../Images/HTML5.svg';
@@ -50,6 +52,7 @@ export class TechStack extends Component {
         this.state = {
             techStacks: props.techStacks,
             techStackSvgs: [
+              { "name": Angular, "category": "Frameworks" },
               { "name": Apple, "category": "Tools" },
               { "name": Bamboo, "category": "Tools" },
               { "name": BitBucket, "category": "Tools" },
@@ -59,8 +62,9 @@ export class TechStack extends Component {
               { "name": CSharp, "category": "Languages" },
               { "name": CSS3, "category": "Languages" },
               { "name": Express, "category": "Frameworks" },
+              { "name": Git, "category": "Languages" },
               { "name": GitHub, "category": "Tools" },
-              { "name": GoogleCloud, "category":"Frameworks" },
+              { "name": GoogleCloud, "category":"Tools" },
               { "name": HTML5, "category": "Languages" },
               { "name": IntelliJIDEA, "category": "Tools" },
               { "name": Jasmine, "category": "Frameworks" },

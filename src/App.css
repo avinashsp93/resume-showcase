@@ -40,3 +40,9 @@ a:hover {
   top: 100px;
   height: 100px;
 }
+
+/* Media queries : Navigator */
+
+@media screen and (max-width: 992px) {
+  
+}

@@ -1,7 +1,7 @@
 {
     "leftHalf": {},
     "rightHalf": {
-        "bio": "My career journey started at Infosys in India, where I worked on front-end development for Apple, and continued at Charles Schwab before joining Deutsche Bank. I'm passionate about staying at the forefront of technology and enjoy the challenges it brings. Outside of work, I'm dedicated to table tennis, where I've turned my enthusiasm into skill through consistent practice and competition. Balancing my professional life with my love for the sport, I also make time to travel and stay fit.",
+        "bio": "My career journey started at Infosys Technologies in India, where I worked as a front-end web developer for Apple, and continued at Charles Schwab as a back-end engineer before joining Deutsche Bank. I'm passionate about staying at the forefront of technology and enjoy the challenges it brings. Outside of work, I'm dedicated to table tennis, where I've turned my enthusiasm into skill through consistent practice and competition. Balancing my professional life with my love for the sport, I also make time to travel and stay fit.",
         "experiences": [
             {
                 "key": 1,
@@ -18,7 +18,7 @@
                 "designation": "Software Developer",
                 "company": "Charles Schwab",
                 "summary": "Participated in Agile development, attending daily stand-ups and sprint ceremonies. Collaborated with the Product Owner to understand requirements, designed and proposed solutions, and implemented approved designs. Conducted code reviews, wrote unit and integration tests, and optimized code with QA feedback. Used Bitbucket for version control, verified builds on Bamboo, addressed Veracode scan issues, and deployed services on Harness. Managed PCF cloud instances post-deployment and supported offshore teams.",
-                "links": [".NET Core", "Mongo DB", "Aerospike", "Postman", "Parasoft SOA", "Control-M", "Rabbit-MQ", "Splunk", "Visual Studio", "Bamboo"],
+                "links": ["Angular", ".NET Core", "Mongo DB", "Aerospike", "Postman", "Parasoft SOA", "Control-M", "Rabbit-MQ", "Splunk", "Visual Studio", "Bamboo"],
                 "technologies": ["", "", ""]
               },
               {
@@ -27,12 +27,12 @@
                 "designation": "C# Engineer",
                 "company": "Deutsche Bank",
                 "summary": "Developed an in-house tool for value adjustments, trade extraction, selection, and reference data enrichment for Deutsche Bank's counterparties, integrating it with a risk assessment tool. Successfully decommissioned the Gravity tool, saving the company 300K Euros.",
-                "links": [".NET Framework", ".NET Core", "WPF", "WCF", "Oracle", "Postman", "Teamcity", "Visual Studio", "Solace Queue", "CRON Triggers"],
+                "links": [".NET Framework", ".NET Core", "WPF", "WCF", "Oracle", "Postman", "TeamCity", "UDeploy", "Visual Studio", "Solace Queue", "CRON Triggers"],
                 "technologies": ["", "", ""]
               }
         ],
         "techStacks": ["Angular","Apple","Bamboo","BitBucket","Bootstrap","Bulma","CSharp","CSS3","Express",
-        "GitHub","GoogleCloud","HTML5","IntelliJIDEA","Jasmine","JavaScript","Jira","jQuery",
+        "Git","GitHub","GoogleCloud","HTML5","IntelliJIDEA","Jasmine","JavaScript","Jira","jQuery",
         "LaTeX","Linux","NETCore","Nodejs","Nodemon","NPM","NuGet","ObjectiveC","Oracle",
         "Python","RabbitMQ","Reacter","Redux","Splunk","SQLDeveloper","TypeScript"],
         "projects": [
@@ -64,7 +64,8 @@
             "description": "In-house tool for trade extraction, selection, and reference data enrichment, used before sending data to the Risk Finder for assessment. It’s a legacy application with WCF technology, WPF front end, and Oracle Database.",
             "links": []
           }
-        ]
+        ],
+        "footnotes": "This page is created with the help of libraries such as React, Bootstrap, FontAwesome and MD5 Animations. It also uses tech icons and icons from font awesome library. This is coded in VS Code editor and deployed using GithubPages and Heroku."
     }
 }
 

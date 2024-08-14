@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Link from './Link';
+import Link from './C_Link';
 
 export class Experience extends Component {
     constructor(props) {

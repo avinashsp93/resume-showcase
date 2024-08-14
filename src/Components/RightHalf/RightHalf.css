@@ -38,13 +38,6 @@
 
 .tech-icons-container img {
     width: 40px;
-    filter: grayscale(50%);
-    transition: width 0.1s, filter 0.25s;
-}
-
-.tech-icons-container img:hover {
-    width: 50px;
-    filter: grayscale(0%);
 }
 
 .tech-stack .tech-tab {

@@ -1,7 +1,7 @@
 import React from 'react'
-import Intro from './Intro'
-import Navigator from './Navigator'
-import Footer from './Footer'
+import Intro from './A_Intro'
+import Navigator from './B_Navigator'
+import Footer from './C_Footer'
 
 function LeftHalf({ leftHalf }) {
   return (

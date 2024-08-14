@@ -11,6 +11,7 @@ export class Footer extends Component {
         <div className="d-table-cell"><a href="https://www.hackerrank.com/profile/avinashsp93" target="_blank"><i className="fa-brands fa-hackerrank" /></a></div>
         <div className="d-table-cell"><a href="https://codepen.io/avinashsp93/" target="_blank"><i className="fa-brands fa-codepen" /></a></div>
         <div className="d-table-cell"><a href="https://leetcode.com/u/avinashsp93/" target="_blank"><i className="fa-solid fa-code" /></a></div>
+        <div className="d-table-cell"><a href="https://stackoverflow.com/users/5646079/avinash-sorab" target="_blank"><i className="fa-brands fa-stack-overflow" /></a></div>
       </div>
     )
   }

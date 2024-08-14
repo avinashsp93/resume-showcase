@@ -1,8 +1,9 @@
 import React from 'react'
-import Biography from './Biography'
-import Experience from './Experience';
-import TechStack from './TechStack';
-import Project from './Project';
+import Biography from './A_Biography'
+import Experience from './B_Experience';
+import TechStack from './D_TechStack';
+import Project from './E_Project';
+import FootNotes from './F_FootNotes';
 
 function RightHalf({ rightHalf }) {
 
@@ -29,6 +30,10 @@ function RightHalf({ rightHalf }) {
           return <Project key={project.key} project={project} />
         })
       }
+      <br />
+      <hr />
+      <br />
+      <FootNotes footnotes={rightHalf.footnotes}/>
     </div>
   )
 }
