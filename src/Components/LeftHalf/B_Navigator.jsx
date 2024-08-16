@@ -10,6 +10,8 @@ export class Navigator extends Component {
       ref2: React.createRef(),
       ref3: React.createRef(),
       ref4: React.createRef(),
+      ref5: React.createRef(),
+      isActiveContact: false,
       isActiveAbout: false,
       isActiveExperience: false,
       isActiveTechStack: false,
@@ -18,40 +20,54 @@ export class Navigator extends Component {
   }
 
   componentDidMount() {
-    this.state.ref1 = document.getElementById('bio');
-    this.state.ref2 = document.getElementById('exp');
-    this.state.ref3 = document.getElementById('tech');
-    this.state.ref4 = document.getElementById('proj');
+    this.state.ref1 = document.getElementById('con');
+    this.state.ref2 = document.getElementById('bio');
+    this.state.ref3 = document.getElementById('exp');
+    this.state.ref4 = document.getElementById('tech');
+    this.state.ref5 = document.getElementById('proj');
   }
 
   scrollToSection = (event) => {
     switch(event.target.innerHTML) {
-      case 'About': this.state.ref1.scrollIntoView({behavior: "smooth" });
+      case 'Contact': this.state.ref1.scrollIntoView({behavior: "smooth" }); 
         this.setState({
+          isActiveContact: true,
+          isActiveAbout: false,
+          isActiveExperience: false,
+          isActiveTechStack: false,
+          isActiveProjects: true
+        })
+        break;
+      case 'About': this.state.ref2.scrollIntoView({behavior: "smooth" });
+        this.setState({
+          isActiveContact: false,
           isActiveAbout: true,
           isActiveExperience: false,
           isActiveTechStack: false,
           isActiveProjects: false
         })
         break;
-      case 'Experience': this.state.ref2.scrollIntoView({behavior: "smooth" });
+      case 'Experience': this.state.ref3.scrollIntoView({behavior: "smooth" });
         this.setState({
+          isActiveContact: false,
           isActiveAbout: false,
           isActiveExperience: true,
           isActiveTechStack: false,
           isActiveProjects: false
         })
         break;
-      case 'Tech Stack': this.state.ref3.scrollIntoView({behavior: "smooth" });
+      case 'Tech Stack': this.state.ref4.scrollIntoView({behavior: "smooth" });
         this.setState({
+          isActiveContact: false,
           isActiveAbout: false,
           isActiveExperience: false,
           isActiveTechStack: true,
           isActiveProjects: false
         })
         break;
-      case 'Projects': this.state.ref4.scrollIntoView({behavior: "smooth" }); 
+      case 'Projects': this.state.ref5.scrollIntoView({behavior: "smooth" }); 
         this.setState({
+          isActiveContact: false,
           isActiveAbout: false,
           isActiveExperience: false,
           isActiveTechStack: false,
@@ -65,6 +81,9 @@ export class Navigator extends Component {
     return (
       <div className='navigator'>
         <ul>
+            <li className={this.state.isActiveAbout ? 'mt-4 selected-navigator' : 'mt-4'}>
+                <a className='h6 text-uppercase text-decoration-none' target='_blank' onClick={this.scrollToSection}>Contact</a>
+            </li>
             <li className={this.state.isActiveAbout ? 'mt-4 selected-navigator' : 'mt-4'}>
                 <a className='h6 text-uppercase text-decoration-none' target='_blank' onClick={this.scrollToSection}>About</a>
             </li>

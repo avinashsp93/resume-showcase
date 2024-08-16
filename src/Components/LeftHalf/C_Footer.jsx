@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class Footer extends Component {
   render() {
     return (
-      <div className='footer text-center fs-4 mt-5 pt-5'>
+      <div className='footer text-center fs-4'>
         <div className="d-table-cell"><a href="https://www.facebook.com/avinashsp93" target="_blank"><i className="fa-brands fa-facebook" /></a></div>
         <div className="d-table-cell"><a href="https://www.instagram.com/avinashsp93" target="_blank"><i className="fa-brands fa-instagram" /></a></div>
         <div className="d-table-cell"><a href="https://www.linkedin.com/in/avinash-sorab-876a56a5/" target="_blank"><i className="fa-brands fa-linkedin" /></a></div>

@@ -10,7 +10,7 @@ export class FootNotes extends Component {
     }
   render() {
     return (
-      <footer id="footnotes" className='m-2'>
+      <footer id="footnotes" className='footnotes m-2 me-1'>
         {this.state.footnotes}
       </footer>
     )

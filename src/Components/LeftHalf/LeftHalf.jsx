@@ -5,13 +5,12 @@ import Footer from './C_Footer'
 
 function LeftHalf({ leftHalf }) {
   return (
-    <div className='sticky-pos col-lg-6'>
+    <div className='left-half col-lg-6'>
         <Intro />
         <br />
         <hr />
         <br />
         <Navigator />
-        <br />
         <br />
         <Footer />
     </div>

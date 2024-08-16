@@ -34,7 +34,7 @@ a:hover {
   cursor: pointer;
 }
 
-.sticky-pos {
+.left-half {
   position: sticky;
   position: -webkit-sticky;
   top: 100px;
@@ -44,5 +44,44 @@ a:hover {
 /* Media queries : Navigator */
 
 @media screen and (max-width: 992px) {
-  
+  .navigator {
+    display: none;
+  }
+
+  .left-half {
+    /* Make it scrolabble but place it on the padding portion of right-half */
+    position: static;
+    z-index: 1;
+  }
+
+  .right-half {
+    position: relative;
+    padding-top: 200px;
+  }
+
+
+}
+
+@media screen and (max-width: 1464px) {
+  .tech-stack {
+    min-height: 500px;
+  }
+}
+
+@media screen and (max-width: 1264px) {
+  .tech-stack {
+    min-height: 600px;
+  }
+}
+
+@media screen and (max-width: 1064px) {
+  .tech-stack {
+    min-height: 700px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .tech-stack {
+    min-height: auto;
+  }
 }

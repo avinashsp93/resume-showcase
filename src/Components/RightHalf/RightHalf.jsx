@@ -1,14 +1,21 @@
 import React from 'react'
-import Biography from './A_Biography'
-import Experience from './B_Experience';
-import TechStack from './D_TechStack';
+import Contact from './A_Contact';
+import Biography from './B_Biography';
+import Experience from './C_Experience';
+import TechStack from './F_TechStack';
 import Project from './E_Project';
-import FootNotes from './F_FootNotes';
+import FootNotes from './G_FootNotes';
 
 function RightHalf({ rightHalf }) {
 
   return (
-    <div className='col-lg-6'>
+    <div className='right-half col-lg-6'>
+      <hr />
+      <br />
+      <Contact bio={rightHalf.bio}/>
+      <br />
+      <hr />
+      <br />
       <Biography bio={rightHalf.bio}/>
       <br />
       <hr />
@@ -34,6 +41,9 @@ function RightHalf({ rightHalf }) {
       <hr />
       <br />
       <FootNotes footnotes={rightHalf.footnotes}/>
+      <br />
+      <hr />
+      <br />
     </div>
   )
 }

@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import Link from './C_Link';
+import Link from './D_Link';
 
 export class Experience extends Component {
     constructor(props) {
-        super(props);
-        this.state = {
-          experience : props.experience
-        }
+      super(props);
+      this.state = {
+        experience : props.experience
+      }
     }
 
   render() {

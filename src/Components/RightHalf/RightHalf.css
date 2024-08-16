@@ -71,3 +71,60 @@
     color: #343;
     font-size: 0.8rem;
 }
+
+.footnotes {
+    font-size: smaller;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+}
+
+.contact button {
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.contact button.animative:hover{
+    cursor: initial;
+    animation: rotateButtons180 1s forwards;
+}
+
+.contact button.animative div {
+    z-index: 1;
+}
+
+.contact button.animative div:hover {
+    cursor: initial;
+    animation: rotateText360 1s forwards;
+}
+
+.contact button.external-link:hover {
+    color: #787;   
+}
+.contact button.external-link a {
+    color: inherit;
+}
+
+@keyframes rotateButtons180 {
+    0% {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(1, 0, 0, 180deg);
+    }
+}
+
+@keyframes rotateText360 {
+    0% {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(1, 0, 0, 180deg);
+    }
+}
+
+

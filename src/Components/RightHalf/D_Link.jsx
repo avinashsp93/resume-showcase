@@ -10,7 +10,7 @@ export class Link extends Component {
   render() {
     return (
       <div className='tech-links m-1 p-1'>
-        <a className='h6 m-2' href="#" target='_blank'>{this.state.link}</a>
+        <a className='h6 m-2' target='_blank'>{this.state.link}</a>
       </div>
     )
   }
