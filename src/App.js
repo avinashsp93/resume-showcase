@@ -3,7 +3,19 @@ import React, { useState } from 'react';
 import Container from './Components/Container';
 import data from './data.json';
 
+// This is returned since the app is constantly re-rendered due to mouseMove event on background
+const useConstructor = (callBack = () => {}) => {
+  const [hasBeenCalled, setHasBeenCalled] = useState(false);
+  if(hasBeenCalled) return;
+  callBack();
+  setHasBeenCalled(true);
+}
+
 function App() {
+  useConstructor(() => {
+    console.log("This only happens ONCE.");
+  });
+
   let [coordinates, setCoordinates] = useState({ x: 0, y: 0});
   let [backgroundGradient, setBackgroundGradient] = useState({
     background: 'rgba(6, 11, 64, 0.95)'
