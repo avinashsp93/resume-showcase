@@ -17,6 +17,11 @@
   font-size: 0.8em;
 }
 
+.full-width-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 p {
   text-align: justify;
 }
@@ -85,3 +90,16 @@ a:hover {
     min-height: auto;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .tech-stack {
+    min-height: 500px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .tech-stack {
+    min-height: 600px;
+  }
+}
+

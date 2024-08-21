@@ -36,7 +36,7 @@ function App() {
   
 
   return (
-    <div className="app archivo-showcase" onMouseMove={mouseMovedEvent} style={backgroundGradient}>
+    <div className="app archivo-showcase full-width-container" onMouseMove={mouseMovedEvent} style={backgroundGradient}>
       <Container data={data}/>
     </div>
   );

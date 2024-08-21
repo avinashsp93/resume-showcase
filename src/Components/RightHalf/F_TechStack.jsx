@@ -129,10 +129,10 @@ export class TechStack extends Component {
     render() {
       return (
         <div id="tech" className='tech-stack row ps-3'>
-          <div className='tech-tab row mt-5 mb-5'>
-            <div className={this.state.isActiveLanguages ? 'h6 text-uppercase p-2 col-sm-4 option-selected' : 'h6 text-uppercase p-2 col-sm-4 option'} onClick={this.setOptionSelected}>Languages</div>
-            <div className={this.state.isActiveFrameworks ? 'h6 text-uppercase p-2 col-sm-4 option-selected' : 'h6 text-uppercase p-2 col-sm-4 option'} onClick={this.setOptionSelected}>Frameworks</div>
-            <div className={this.state.isActiveTools ? 'h6 text-uppercase p-2 col-sm-4 option-selected' : 'h6 text-uppercase p-2 col-sm-4 option'} onClick={this.setOptionSelected}>Tools</div>
+          <div className='tech-tab row'>
+            <div className={this.state.isActiveLanguages ? 'h6 text-uppercase p-2 col-4 option-selected' : 'h6 text-uppercase p-2 col-4 option'} onClick={this.setOptionSelected}>Languages</div>
+            <div className={this.state.isActiveFrameworks ? 'h6 text-uppercase p-2 col-4 option-selected' : 'h6 text-uppercase p-2 col-4 option'} onClick={this.setOptionSelected}>Frameworks</div>
+            <div className={this.state.isActiveTools ? 'h6 text-uppercase p-2 col-4 option-selected' : 'h6 text-uppercase p-2 col-4 option'} onClick={this.setOptionSelected}>Tools</div>
           </div>
           <div className="row tech-icons-container">
             {
