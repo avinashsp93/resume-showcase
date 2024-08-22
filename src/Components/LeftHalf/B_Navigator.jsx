@@ -20,11 +20,13 @@ export class Navigator extends Component {
   }
 
   componentDidMount() {
-    this.state.ref1 = document.getElementById('con');
-    this.state.ref2 = document.getElementById('bio');
-    this.state.ref3 = document.getElementById('exp');
-    this.state.ref4 = document.getElementById('tech');
-    this.state.ref5 = document.getElementById('proj');
+    this.setState({
+      ref1 : document.getElementById('con'),
+      ref2 : document.getElementById('bio'),
+      ref3 : document.getElementById('exp'),
+      ref4 : document.getElementById('tech'),
+      ref5 : document.getElementById('proj')
+    });
   }
 
   scrollToSection = (event) => {
@@ -74,6 +76,7 @@ export class Navigator extends Component {
           isActiveProjects: true
         })
         break;
+      default : break;
     }
   }
 
@@ -82,19 +85,19 @@ export class Navigator extends Component {
       <div className='navigator'>
         <ul>
             <li className={this.state.isActiveAbout ? 'mt-4 selected-navigator' : 'mt-4'}>
-                <a className='h6 text-uppercase text-decoration-none' target='_blank' onClick={this.scrollToSection}>Contact</a>
+                <a href='/' className='h6 text-uppercase text-decoration-none' target='_blank' rel="noreferrer" onClick={this.scrollToSection}>Contact</a>
             </li>
             <li className={this.state.isActiveAbout ? 'mt-4 selected-navigator' : 'mt-4'}>
-                <a className='h6 text-uppercase text-decoration-none' target='_blank' onClick={this.scrollToSection}>About</a>
+                <a href='/' className='h6 text-uppercase text-decoration-none' target='_blank' rel="noreferrer" onClick={this.scrollToSection}>About</a>
             </li>
             <li className={this.state.isActiveExperience ? 'mt-4 selected-navigator' : 'mt-4'}>
-                <a className='h6 text-uppercase text-decoration-none' target='_blank' onClick={this.scrollToSection}>Experience</a>
+                <a href='/' className='h6 text-uppercase text-decoration-none' target='_blank' rel="noreferrer" onClick={this.scrollToSection}>Experience</a>
             </li>
             <li className={this.state.isActiveTechStack ? 'mt-4 selected-navigator' : 'mt-4'}>
-                <a className='h6 text-uppercase text-decoration-none' target='_blank' onClick={this.scrollToSection}>Tech Stack</a>
+                <a href='/' className='h6 text-uppercase text-decoration-none' target='_blank' rel="noreferrer" onClick={this.scrollToSection}>Tech Stack</a>
             </li>
             <li className={this.state.isActiveProjects ? 'mt-4 selected-navigator' : 'mt-4'}>
-                <a className='h6 text-uppercase text-decoration-none' target='_blank' onClick={this.scrollToSection}>Projects</a>
+                <a href='/' className='h6 text-uppercase text-decoration-none' target='_blank' rel="noreferrer" onClick={this.scrollToSection}>Projects</a>
             </li>
         </ul>        
       </div>

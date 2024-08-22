@@ -46,7 +46,7 @@ export class Contact extends Component {
             </button>
             <button className="external-link col-sm-3 fs-6 text-uppercase">
                 <div onMouseOver={this.loadText} onMouseLeave={this.unloadText}>
-                    <a href="https://drive.google.com/file/d/1CZcCyUwt-fxxa68AHzum6Y7ttd7a2Tjn/view" target="_blank">Resume </a>
+                    <a href="https://drive.google.com/file/d/1CZcCyUwt-fxxa68AHzum6Y7ttd7a2Tjn/view" target="_blank" rel="noreferrer">Resume </a>
                     <i className="fa-duotone fa-solid fa-square-up-right"></i>
                 </div>
             </button>

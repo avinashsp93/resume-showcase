@@ -16,7 +16,7 @@ function App() {
     console.log("This only happens ONCE.");
   });
 
-  let [coordinates, setCoordinates] = useState({ x: 0, y: 0});
+  let [coordinates] = useState({ x: 0, y: 0});
   let [backgroundGradient, setBackgroundGradient] = useState({
     background: 'rgba(6, 11, 64, 0.95)'
   });
