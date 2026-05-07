@@ -1,0 +1,39 @@
+/* CONTACT SECTION */
+.contact ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.tech-links {
+  display: inline-block;
+  background-color: var(--color-accent);
+}
+
+.tech-links a {
+  text-decoration: none;
+}
+
+/* TECH STACK SECTION */
+.tech-stack ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+}
+
+.tech-icons-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: start;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+}

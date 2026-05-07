@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  width: 1560px;
+  margin: 0 auto;
+  flex-direction: row;
+  gap: 50px;
+  min-height: 100vh;
+}
+
+.sidebar {
+  flex: 2;
+  position: sticky;
+  position: -webkit-sticky;
+  align-self: flex-start;
+  top: 150px;
+}
+
+.main-content {
+  flex: 3;
+  position: relative;
+}
