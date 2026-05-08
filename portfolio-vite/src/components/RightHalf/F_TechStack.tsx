@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
 import Angular from "./../../Images/Angular.svg";
 import Apple from "./../../Images/Apple.svg";
@@ -45,117 +45,119 @@ import VSCode from "./../../Images/VSCode.svg";
 
 import "./MainContent.css";
 
-export class TechStack extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      techStacks: props.techStacks,
-      techStackSvgs: [
-        { name: Angular, category: "Frameworks" },
-        { name: Apple, category: "Tools" },
-        { name: Bamboo, category: "Tools" },
-        { name: BitBucket, category: "Tools" },
-        { name: Bootstrap, category: "Frameworks" },
-        { name: Bulma, category: "Frameworks" },
-        { name: C, category: "Languages" },
-        { name: CSharp, category: "Languages" },
-        { name: CSS3, category: "Languages" },
-        { name: Express, category: "Frameworks" },
-        { name: Git, category: "Languages" },
-        { name: GitHub, category: "Tools" },
-        { name: GoogleCloud, category: "Tools" },
-        { name: HTML5, category: "Languages" },
-        { name: IntelliJIDEA, category: "Tools" },
-        { name: Jasmine, category: "Frameworks" },
-        { name: JavaScript, category: "Languages" },
-        { name: Jira, category: "Tools" },
-        { name: jQuery, category: "Frameworks" },
-        { name: LaTeX, category: "Languages" },
-        { name: Linux, category: "Tools" },
-        { name: MongoDB, category: "Languages" },
-        { name: NETCore, category: "Frameworks" },
-        { name: Node, category: "Frameworks" },
-        { name: Nodemon, category: "Tools" },
-        { name: NPM, category: "Frameworks" },
-        { name: NuGet, category: "Frameworks" },
-        { name: ObjectiveC, category: "Languages" },
-        { name: Oracle, category: "Languages" },
-        { name: Postman, category: "Tools" },
-        { name: Python, category: "Languages" },
-        { name: RabbitMQ, category: "Tools" },
-        { name: Reacter, category: "Frameworks" },
-        { name: Redux, category: "Frameworks" },
-        { name: Sass, category: "Languages" },
-        { name: Splunk, category: "Tools" },
-        { name: SQLDeveloper, category: "Tools" },
-        { name: Swagger, category: "Tools" },
-        { name: TypeScript, category: "Languages" },
-        { name: Ubuntu, category: "Tools" },
-        { name: VisualStudio, category: "Tools" },
-        { name: VSCode, category: "Tools" },
-      ],
-      optionSelected: "Languages",
-      isActiveLanguages: true,
-      isActiveFrameworks: false,
-      isActiveTools: false,
-    };
-  }
+function TechStack(props: any) {
+  var techStackSvgs = [
+    { name: Angular, category: "Frameworks" },
+    { name: Apple, category: "Tools" },
+    { name: Bamboo, category: "Tools" },
+    { name: BitBucket, category: "Tools" },
+    { name: Bootstrap, category: "Frameworks" },
+    { name: Bulma, category: "Frameworks" },
+    { name: C, category: "Languages" },
+    { name: CSharp, category: "Languages" },
+    { name: CSS3, category: "Languages" },
+    { name: Express, category: "Frameworks" },
+    { name: Git, category: "Languages" },
+    { name: GitHub, category: "Tools" },
+    { name: GoogleCloud, category: "Tools" },
+    { name: HTML5, category: "Languages" },
+    { name: IntelliJIDEA, category: "Tools" },
+    { name: Jasmine, category: "Frameworks" },
+    { name: JavaScript, category: "Languages" },
+    { name: Jira, category: "Tools" },
+    { name: jQuery, category: "Frameworks" },
+    { name: LaTeX, category: "Languages" },
+    { name: Linux, category: "Tools" },
+    { name: MongoDB, category: "Languages" },
+    { name: NETCore, category: "Frameworks" },
+    { name: Node, category: "Frameworks" },
+    { name: Nodemon, category: "Tools" },
+    { name: NPM, category: "Frameworks" },
+    { name: NuGet, category: "Frameworks" },
+    { name: ObjectiveC, category: "Languages" },
+    { name: Oracle, category: "Languages" },
+    { name: Postman, category: "Tools" },
+    { name: Python, category: "Languages" },
+    { name: RabbitMQ, category: "Tools" },
+    { name: Reacter, category: "Frameworks" },
+    { name: Redux, category: "Frameworks" },
+    { name: Sass, category: "Languages" },
+    { name: Splunk, category: "Tools" },
+    { name: SQLDeveloper, category: "Tools" },
+    { name: Swagger, category: "Tools" },
+    { name: TypeScript, category: "Languages" },
+    { name: Ubuntu, category: "Tools" },
+    { name: VisualStudio, category: "Tools" },
+    { name: VSCode, category: "Tools" },
+  ];
 
-  setOptionSelected = (event) => {
-    this.setState({
-      optionSelected: event.target.innerHTML,
-    });
-    switch (event.target.innerHTML) {
+  var rightHalfTechStacks = props.techStacks;
+  var _useState = useState("Languages"),
+    optionSelected = _useState[0],
+    setOptionSelectedState = _useState[1];
+  var _useState2 = useState(true),
+    isActiveLanguages = _useState2[0],
+    setIsActiveLanguages = _useState2[1];
+  var _useState3 = useState(false),
+    isActiveFrameworks = _useState3[0],
+    setIsActiveFrameworks = _useState3[1];
+  var _useState4 = useState(false),
+    isActiveTools = _useState4[0],
+    setIsActiveTools = _useState4[1];
+
+  function handleOptionSelected(event) {
+    var option = event.target.innerHTML;
+    setOptionSelectedState(option);
+
+    switch (option) {
       case "Languages":
-        this.setState({
-          isActiveLanguages: true,
-          isActiveFrameworks: false,
-          isActiveTools: false,
-        });
+        setIsActiveLanguages(true);
+        setIsActiveFrameworks(false);
+        setIsActiveTools(false);
         break;
       case "Frameworks":
-        this.setState({
-          isActiveLanguages: false,
-          isActiveFrameworks: true,
-          isActiveTools: false,
-        });
+        setIsActiveLanguages(false);
+        setIsActiveFrameworks(true);
+        setIsActiveTools(false);
         break;
       case "Tools":
-        this.setState({
-          isActiveLanguages: false,
-          isActiveFrameworks: false,
-          isActiveTools: true,
-        });
+        setIsActiveLanguages(false);
+        setIsActiveFrameworks(false);
+        setIsActiveTools(true);
         break;
       default:
         break;
     }
-  };
-
-  render() {
-    return (
-      <div id="tech" className="tech-stack">
-        <ul>
-          <li>Languages</li>
-          <li>Frameworks</li>
-          <li>Tools</li>
-        </ul>
-        <div className="tech-icons-container">
-          {this.state.techStackSvgs.map((techStackSvg) => {
-            if (
-              (this.state.isActiveLanguages &&
-                techStackSvg.category === "Languages") ||
-              (this.state.isActiveFrameworks &&
-                techStackSvg.category === "Frameworks") ||
-              (this.state.isActiveTools && techStackSvg.category === "Tools")
-            ) {
-              return <img src={techStackSvg.name} alt="Tech Stack" />;
-            }
-          })}
-        </div>
-      </div>
-    );
   }
+
+  return (
+    <div id="tech" className="tech-stack">
+      <ul>
+        <li onClick={handleOptionSelected}>Languages</li>
+        <li onClick={handleOptionSelected}>Frameworks</li>
+        <li onClick={handleOptionSelected}>Tools</li>
+      </ul>
+      <div className="tech-icons-container">
+        {techStackSvgs.map(function (techStackSvg) {
+          if (
+            (isActiveLanguages && techStackSvg.category === "Languages") ||
+            (isActiveFrameworks && techStackSvg.category === "Frameworks") ||
+            (isActiveTools && techStackSvg.category === "Tools")
+          ) {
+            return (
+              <img
+                key={techStackSvg.name}
+                src={techStackSvg.name}
+                alt="Tech Stack"
+              />
+            );
+          }
+
+          return null;
+        })}
+      </div>
+    </div>
+  );
 }
 
 export default TechStack;

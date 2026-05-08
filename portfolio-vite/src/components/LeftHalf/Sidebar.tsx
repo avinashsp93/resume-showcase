@@ -2,7 +2,7 @@ import Intro from "./A_Intro";
 import Navigator from "./B_Navigator";
 import Footer from "./C_Footer";
 
-function Sidebar({ leftHalf }: any) {
+function Sidebar() {
   return (
     <div>
       <Intro />

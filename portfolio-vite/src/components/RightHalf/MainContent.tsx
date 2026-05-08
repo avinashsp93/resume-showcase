@@ -5,39 +5,28 @@ import TechStack from "./F_TechStack";
 import Project from "./E_Project";
 import FootNotes from "./G_FootNotes";
 
-function MainContent({ rightHalf }) {
+function MainContent(props: any) {
+  var rightHalf = props.rightHalf;
+
   return (
     <div className="right-half">
       <hr />
-      <br />
       <Contact bio={rightHalf.bio} />
-      <br />
       <hr />
-      <br />
       <Biography bio={rightHalf.bio} />
-      <br />
       <hr />
-      <br />
-      {rightHalf.experiences.map((experience) => {
+      {rightHalf.experiences.map(function (experience: any) {
         return <Experience key={experience.key} experience={experience} />;
       })}
-      <br />
       <hr />
-      <br />
       <TechStack techStacks={rightHalf.techStacks} />
-      <br />
       <hr />
-      <br />
-      {rightHalf.projects.map((project) => {
+      {rightHalf.projects.map(function (project: any) {
         return <Project key={project.key} project={project} />;
       })}
-      <br />
       <hr />
-      <br />
       <FootNotes footnotes={rightHalf.footnotes} />
-      <br />
       <hr />
-      <br />
     </div>
   );
 }

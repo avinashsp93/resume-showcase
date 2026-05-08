@@ -1,26 +1,20 @@
-import React, { Component } from 'react'
+function Project(props: any) {
+  var project = props.project;
 
-export class Project extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      project: props.project
-    };
-  }
-  render() {
-    return (
-      <div id="proj" className='project row m-2 p-2'>
-        <div className='mt-2 col-sm-4 text-center'>
-            <h6>{this.state.project.name}</h6>
-        </div>
-        <div className='col-sm-8'>
-            <h5>{this.state.project.name} - {this.state.project.client}</h5>
-            <p>{this.state.project.description}</p>
-            <br />
-        </div>
+  return (
+    <div id="proj" className="project row m-2 p-2">
+      <div className="mt-2 col-sm-4 text-center">
+        <h6>{project.name}</h6>
       </div>
-    )
-  }
+      <div className="col-sm-8">
+        <h5>
+          {project.name} - {project.client}
+        </h5>
+        <p>{project.description}</p>
+        <br />
+      </div>
+    </div>
+  );
 }
 
-export default Project
+export default Project;
