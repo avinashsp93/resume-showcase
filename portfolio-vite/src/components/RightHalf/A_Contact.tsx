@@ -1,4 +1,3 @@
-import { resume } from "react-dom/server";
 import { useData } from "../../contexts/DataContext";
 
 function Contact() {
