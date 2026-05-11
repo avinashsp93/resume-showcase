@@ -1,52 +1,19 @@
+import { useData } from "../../contexts/DataContext";
+
 function Navigator() {
+  const {
+    leftHalf: { navigators },
+  } = useData();
   return (
     <div className="navigator">
       <ul>
-        <li>
-          <a
-            href="/"
-            className="h6 text-uppercase text-decoration-none"
-            target="_blank"
-          >
-            Contact
-          </a>
-        </li>
-        <li>
-          <a
-            href="/"
-            className="h6 text-uppercase text-decoration-none"
-            target="_blank"
-          >
-            About
-          </a>
-        </li>
-        <li>
-          <a
-            href="/"
-            className="h6 text-uppercase text-decoration-none"
-            target="_blank"
-          >
-            Experience
-          </a>
-        </li>
-        <li>
-          <a
-            href="/"
-            className="h6 text-uppercase text-decoration-none"
-            target="_blank"
-          >
-            Tech Stack
-          </a>
-        </li>
-        <li>
-          <a
-            href="/"
-            className="h6 text-uppercase text-decoration-none"
-            target="_blank"
-          >
-            Projects
-          </a>
-        </li>
+        {navigators.map((navigator, index) => (
+          <li key={index}>
+            <a href="/" className="h6 text-uppercase" target="_blank">
+              {navigator}
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );

@@ -1,7 +1,12 @@
-function Biography(props: any) {
+import { useData } from "../../contexts/DataContext";
+
+function Biography() {
+  const {
+    rightHalf: { bio },
+  } = useData();
   return (
     <p id="bio" className="m-2 text-justify">
-      {props.bio}
+      {bio}
     </p>
   );
 }

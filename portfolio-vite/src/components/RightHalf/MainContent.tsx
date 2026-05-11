@@ -3,29 +3,27 @@ import Biography from "./B_Biography";
 import Experience from "./C_Experience";
 import TechStack from "./F_TechStack";
 import Project from "./E_Project";
-import FootNotes from "./G_FootNotes";
+import { useData } from "../../contexts/DataContext";
 
-function MainContent(props: any) {
-  var rightHalf = props.rightHalf;
+function MainContent() {
+  const { rightHalf } = useData();
 
   return (
     <div className="right-half">
       <hr />
-      <Contact bio={rightHalf.bio} />
+      <Contact />
       <hr />
-      <Biography bio={rightHalf.bio} />
+      <Biography />
       <hr />
       {rightHalf.experiences.map(function (experience: any) {
-        return <Experience key={experience.key} experience={experience} />;
+        return <Experience key={experience.key} expKey={experience.key} />;
       })}
       <hr />
-      <TechStack techStacks={rightHalf.techStacks} />
+      <TechStack />
       <hr />
       {rightHalf.projects.map(function (project: any) {
-        return <Project key={project.key} project={project} />;
+        return <Project key={project.key} projKey={project.key} />;
       })}
-      <hr />
-      <FootNotes footnotes={rightHalf.footnotes} />
       <hr />
     </div>
   );

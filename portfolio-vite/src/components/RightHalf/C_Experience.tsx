@@ -1,14 +1,20 @@
 import Link from "./D_Link";
+import { useData } from "../../contexts/DataContext";
 
 function Experience(props: any) {
-  var experience = props.experience;
+  const {
+    rightHalf: { experiences },
+  } = useData();
+  const experience = experiences.find((e: any) => e.key === props.expKey);
+
+  if (!experience) return null;
 
   return (
     <div id="exp" className="experience row">
-      <div className="mt-2 col-sm-4 text-center">
+      <div className="col-sm-12 col-md-4 text-center">
         <h6>{experience.timeline}</h6>
       </div>
-      <div className="col-sm-8 text-justify">
+      <div className="col-sm-12 col-md-8 text-justify">
         <h5>
           {experience.designation} &#x2022; {experience.company}
         </h5>

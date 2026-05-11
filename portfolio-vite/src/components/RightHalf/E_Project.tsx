@@ -1,9 +1,16 @@
+import { useData } from "../../contexts/DataContext";
+
 function Project(props: any) {
-  var project = props.project;
+  const {
+    rightHalf: { projects },
+  } = useData();
+  const project = projects.find((p: any) => p.key === props.projKey);
+
+  if (!project) return null;
 
   return (
     <div id="proj" className="project row m-2 p-2">
-      <div className="mt-2 col-sm-4 text-center">
+      <div className="col-sm-4 text-center text-uppercase">
         <h6>{project.name}</h6>
       </div>
       <div className="col-sm-8">
