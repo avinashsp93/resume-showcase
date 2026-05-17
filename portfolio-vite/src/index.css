@@ -7,20 +7,26 @@
 body {
   margin: 0;
   font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  font-weight: 400;
   background-color: var(--color-bg);
   color: var(--color-text);
+  letter-spacing: -0.03em;
 }
 
 /* GLOBAL STYLES */
 
 :root {
   --color-bg: #030734;
-  --color-text: #c0cbdf;
+  --color-text: #bcbed8;
+  --color-text-secondary: #0b1a35;
   --color-heading: #f9fafb;
-  --color-accent: #7c3aed;
+  --color-accent: #43becc;
   --color-border: #374151;
 
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-size-base: 14px;
+
 
   --container-width: 1200px;
 }

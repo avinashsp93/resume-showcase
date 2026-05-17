@@ -12,7 +12,9 @@
 
 .tech-links {
   display: inline-block;
+  color: var(--color-text-secondary);
   background-color: var(--color-accent);
+  border-radius: 50px;
 }
 
 .tech-links a {
@@ -36,4 +38,9 @@
   align-items: center;
   gap: 50px;
   padding: 50px;
+}
+
+section {
+  padding: 30px;
+  border-bottom: 1px solid var(--color-border);
 }
