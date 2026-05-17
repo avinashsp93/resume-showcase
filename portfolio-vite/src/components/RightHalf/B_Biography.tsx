@@ -2,13 +2,9 @@ import { useData } from "../../contexts/DataContext";
 
 function Biography() {
   const {
-    rightHalf: { bio },
+    rightHalf: { biography },
   } = useData();
-  return (
-    <p id="bio" className="m-2 text-justify">
-      {bio}
-    </p>
-  );
+  return <p className="m-2 text-justify">{biography}</p>;
 }
 
 export default Biography;

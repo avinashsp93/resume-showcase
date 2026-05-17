@@ -10,7 +10,7 @@ function Experience(props: any) {
   if (!experience) return null;
 
   return (
-    <div id="exp" className="experience row">
+    <div className="experience row">
       <div className="col-sm-12 col-md-4 text-center">
         <h6>{experience.timeline}</h6>
       </div>

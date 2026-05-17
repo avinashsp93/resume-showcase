@@ -4,12 +4,24 @@ function Navigator() {
   const {
     leftHalf: { navigators },
   } = useData();
+
+  const sectionIds: Record<string, string> = {
+    Contact: "contact",
+    About: "biography",
+    Experience: "experiences",
+    Tech_Stacks: "tech-stacks",
+    Projects: "projects",
+  };
+
   return (
     <div className="navigator">
       <ul>
         {navigators.map((navigator, index) => (
           <li key={index}>
-            <a href="/" className="h6 text-uppercase" target="_blank">
+            <a
+              href={`#${sectionIds[navigator] ?? navigator.toLowerCase().replace(/\s+/g, "-")}`}
+              className="h6 text-uppercase"
+            >
               {navigator}
             </a>
           </li>

@@ -7,7 +7,7 @@ function Contact() {
     },
   } = useData();
   return (
-    <div id="contact" className="contact row">
+    <div className="contact row">
       <ul className="contact-list">
         <li id="location" className="h6 text-uppercase">
           {location}

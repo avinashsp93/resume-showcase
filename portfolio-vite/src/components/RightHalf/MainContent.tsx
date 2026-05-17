@@ -10,21 +10,25 @@ function MainContent() {
 
   return (
     <div className="right-half">
-      <hr />
-      <Contact />
-      <hr />
-      <Biography />
-      <hr />
-      {rightHalf.experiences.map(function (experience: any) {
-        return <Experience key={experience.key} expKey={experience.key} />;
-      })}
-      <hr />
-      <TechStack />
-      <hr />
-      {rightHalf.projects.map(function (project: any) {
-        return <Project key={project.key} projKey={project.key} />;
-      })}
-      <hr />
+      <section id="contact">
+        <Contact />
+      </section>
+      <section id="biography">
+        <Biography />
+      </section>
+      <section id="experiences">
+        {rightHalf.experiences.map(function (experience: any) {
+          return <Experience key={experience.key} expKey={experience.key} />;
+        })}
+      </section>
+      <section id="tech-stacks">
+        <TechStack />
+      </section>
+      <section id="projects">
+        {rightHalf.projects.map(function (project: any) {
+          return <Project key={project.key} projKey={project.key} />;
+        })}
+      </section>
     </div>
   );
 }

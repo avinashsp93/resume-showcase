@@ -9,7 +9,7 @@ function Project(props: any) {
   if (!project) return null;
 
   return (
-    <div id="proj" className="project row m-2 p-2">
+    <div className="project row m-2 p-2">
       <div className="col-sm-4 text-center text-uppercase">
         <h6>{project.name}</h6>
       </div>

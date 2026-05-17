@@ -44,7 +44,7 @@ function TechStack() {
   }
 
   return (
-    <div id="tech" className="tech-stack">
+    <div className="tech-stack">
       <ul>
         <li className="h6 text-uppercase" onClick={handleOptionSelected}>
           Languages

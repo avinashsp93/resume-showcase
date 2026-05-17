@@ -5,11 +5,15 @@ import Footer from "./C_Footer";
 function Sidebar() {
   return (
     <div>
-      <Intro />
-      <hr />
-      <Navigator />
-      <hr />
-      <Footer />
+      <section>
+        <Intro />
+      </section>
+      <section>
+        <Navigator />
+      </section>
+      <section>
+        <Footer />
+      </section>
     </div>
   );
 }

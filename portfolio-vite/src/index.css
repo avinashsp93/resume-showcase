@@ -14,8 +14,8 @@ body {
 /* GLOBAL STYLES */
 
 :root {
-  --color-bg: #060b40;
-  --color-text: #e5e7eb;
+  --color-bg: #030734;
+  --color-text: #c0cbdf;
   --color-heading: #f9fafb;
   --color-accent: #7c3aed;
   --color-border: #374151;
@@ -23,6 +23,12 @@ body {
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 
   --container-width: 1200px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
 }
 
 ul {
