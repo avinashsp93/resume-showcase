@@ -27,7 +27,6 @@ body {
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-size-base: 14px;
 
-
   --container-width: 1200px;
 }
 
@@ -41,6 +40,10 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+ul li {
+  cursor: default;
 }
 
 a {

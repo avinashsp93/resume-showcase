@@ -13,11 +13,25 @@ function Navigator() {
     Projects: "projects",
   };
 
+  const handleNavigatorClick = (navigator: string) => {
+    const sectionId =
+      sectionIds[navigator] ?? navigator.toLowerCase().replace(/\s+/g, "-");
+    // Add color change logic to anchor tags
+    const anchorTags = document.querySelectorAll(".navigator a");
+    anchorTags.forEach((anchor) => {
+      if (anchor.getAttribute("href") === `#${sectionId}`) {
+        anchor.classList.add("active");
+      } else {
+        anchor.classList.remove("active");
+      }
+    });
+  };
+
   return (
     <div className="navigator">
       <ul>
         {navigators.map((navigator, index) => (
-          <li key={index}>
+          <li key={index} onClick={() => handleNavigatorClick(navigator)}>
             <a
               href={`#${sectionIds[navigator] ?? navigator.toLowerCase().replace(/\s+/g, "-")}`}
               className="h6 text-uppercase"
