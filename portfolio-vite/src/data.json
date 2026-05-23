@@ -5,14 +5,6 @@
     "navigators": ["Contact", "About", "Experience", "Tech Stacks", "Projects"],
     "footer": [
       {
-        "url": "https://www.facebook.com/avinashsp93",
-        "icon": "fa-brands fa-facebook"
-      },
-      {
-        "url": "https://www.instagram.com/avinashsp93",
-        "icon": "fa-brands fa-instagram"
-      },
-      {
         "url": "https://www.linkedin.com/in/avinash-sorab-876a56a5/",
         "icon": "fa-brands fa-linkedin"
       },
@@ -21,16 +13,20 @@
         "icon": "fa-brands fa-github"
       },
       {
-        "url": "https://www.hackerrank.com/profile/avinashsp93",
-        "icon": "fa-brands fa-hackerrank"
+        "url": "https://www.skills.google/public_profiles/3013aa44-6871-4cf5-8134-f8258208c79a",
+        "icon": "fa-solid fa-cloud"
       },
       {
         "url": "https://codepen.io/avinashsp93/",
         "icon": "fa-brands fa-codepen"
       },
       {
+        "url": "https://www.hackerrank.com/profile/avinashsp93",
+        "icon": "fa-brands fa-hackerrank"
+      },
+      {
         "url": "https://leetcode.com/u/avinashsp93/",
-        "icon": "fa-solid fa-code"
+        "icon": "fa-brands fa-leetcode"
       },
       {
         "url": "https://stackoverflow.com/users/5646079/avinash-sorab",
