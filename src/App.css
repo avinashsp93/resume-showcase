@@ -1,105 +1,27 @@
-.archivo-showcase {
-  font-family: "Archivo", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+.container {
+  display: flex;
+  /* width: 1560px; */
+  margin: 0 auto;
+  flex-direction: row;
+  min-height: 100vh;
 }
 
-/* CSS for app.js and global css */
-
-.app {
-  width: 100%;
-  height: 100%;
-  padding: 50px 100px;
-  color: #bcb;
-  font-size: 0.8em;
-}
-
-.full-width-container {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-p {
-  text-align: justify;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-.left-half {
+.sidebar {
+  flex: 1;
   position: sticky;
   position: -webkit-sticky;
-  top: 100px;
-  height: 100px;
+  align-self: flex-start;
+  top: 70px;
 }
 
-/* Media queries : Navigator */
-
-@media screen and (max-width: 992px) {
-  .navigator {
-    display: none;
-  }
-
-  .left-half {
-    /* Make it scrolabble but place it on the padding portion of right-half */
-    position: static;
-    z-index: 1;
-  }
-
-  .right-half {
-    position: relative;
-    padding-top: 200px;
-  }
-
-
+.main-content {
+  flex: 3;
+  /* position: relative; */
 }
 
-@media screen and (max-width: 1464px) {
-  .tech-stack {
-    min-height: 500px;
+/* Below 1000px width, stack sidebar and main-content vertically */
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
   }
 }
-
-@media screen and (max-width: 1264px) {
-  .tech-stack {
-    min-height: 600px;
-  }
-}
-
-@media screen and (max-width: 1064px) {
-  .tech-stack {
-    min-height: 700px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .tech-stack {
-    min-height: auto;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .tech-stack {
-    min-height: 500px;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .tech-stack {
-    min-height: 600px;
-  }
-}
-

@@ -1,73 +1,183 @@
 {
-    "leftHalf": {},
-    "rightHalf": {
-        "bio": "My career journey started at Infosys Technologies in India, where I worked as a front-end web developer for Apple, and continued at Charles Schwab as a back-end engineer before joining Deutsche Bank. I'm passionate about staying at the forefront of technology and enjoy the challenges it brings. Outside of work, I'm dedicated to table tennis, where I've turned my enthusiasm into skill through consistent practice and competition. Balancing my professional life with my love for the sport, I also make time to travel and stay fit.",
-        "experiences": [
-            {
-                "key": 1,
-                "timeline": "SEP-15 to DEC-17",
-                "designation": "Web Developer",
-                "company": "Infosys Technologies",
-                "summary": "Analyzed business requirements and participated in review meetings. Designed and developed responsive cross-platform web pages for Safari, Chrome, Firefox, and IE using HTML5, CSS3, Sass, and ES6. Ensured code quality and modularity according to client standards. Created and organized test cases with the Jasmine framework. Utilized NodeJS and npm extensively in the build process.",
-                "links": ["React", "Node", "Recon", "Orbit", "ES6", "TypeScript", "Jasmine", "Gulp"],
-                "technologies": ["", "", ""]
-              },
-              {
-                "key": 2,
-                "timeline": "APR-20 to OCT-22",
-                "designation": "Software Developer",
-                "company": "Charles Schwab",
-                "summary": "Participated in Agile development, attending daily stand-ups and sprint ceremonies. Collaborated with the Product Owner to understand requirements, designed and proposed solutions, and implemented approved designs. Conducted code reviews, wrote unit and integration tests, and optimized code with QA feedback. Used Bitbucket for version control, verified builds on Bamboo, addressed Veracode scan issues, and deployed services on Harness. Managed PCF cloud instances post-deployment and supported offshore teams.",
-                "links": ["Angular", ".NET Core", "Mongo DB", "Aerospike", "Postman", "Parasoft SOA", "Control-M", "Rabbit-MQ", "Splunk", "Visual Studio", "Bamboo"],
-                "technologies": ["", "", ""]
-              },
-              {
-                "key": 3,
-                "timeline": "OCT-22 to PRESENT",
-                "designation": "C# Engineer",
-                "company": "Deutsche Bank",
-                "summary": "Developed an in-house tool for value adjustments, trade extraction, selection, and reference data enrichment for Deutsche Bank's counterparties, integrating it with a risk assessment tool. Successfully decommissioned the Gravity tool, saving the company 300K Euros.",
-                "links": [".NET Framework", ".NET Core", "WPF", "WCF", "Oracle", "Postman", "TeamCity", "UDeploy", "Visual Studio", "Solace Queue", "CRON Triggers"],
-                "technologies": ["", "", ""]
-              }
+  "leftHalf": {
+    "name": "Avinash Sorab",
+    "tagline": "Software Engineer | Table Tennis Enthusiast",
+    "navigators": ["Contact", "About", "Experience", "Tech Stacks", "Projects"],
+    "footer": [
+      {
+        "url": "https://www.linkedin.com/in/avinash-sorab-876a56a5/",
+        "icon": "fa-brands fa-linkedin"
+      },
+      {
+        "url": "https://github.com/avinashsp93",
+        "icon": "fa-brands fa-github"
+      },
+      {
+        "url": "https://www.skills.google/public_profiles/3013aa44-6871-4cf5-8134-f8258208c79a",
+        "icon": "fa-solid fa-cloud"
+      },
+      {
+        "url": "https://codepen.io/avinashsp93/",
+        "icon": "fa-brands fa-codepen"
+      },
+      {
+        "url": "https://www.hackerrank.com/profile/avinashsp93",
+        "icon": "fa-brands fa-hackerrank"
+      },
+      {
+        "url": "https://leetcode.com/u/avinashsp93/",
+        "icon": "fa-brands fa-leetcode"
+      },
+      {
+        "url": "https://stackoverflow.com/users/5646079/avinash-sorab",
+        "icon": "fa-brands fa-stack-overflow"
+      }
+    ]
+  },
+  "rightHalf": {
+    "contact": {
+      "location": "Cary, NC",
+      "phone": "+1(618)353-4297",
+      "email": "avinashsp93@gmail.com",
+      "resume": "External Link"
+    },
+    "biography": "My career journey started at Infosys Technologies in India, where I worked as a front-end web developer for Apple, and continued at Charles Schwab as a back-end engineer before joining Deutsche Bank. I'm passionate about staying at the forefront of technology and enjoy the challenges it brings. Outside of work, I'm dedicated to table tennis, where I've turned my enthusiasm into skill through consistent practice and competition. Balancing my professional life with my love for the sport, I also make time to travel and stay fit.",
+    "experiences": [
+      {
+        "key": 1,
+        "timeline": "SEP-15 to DEC-17",
+        "designation": "Web Developer",
+        "company": "Infosys Technologies",
+        "summary": "Analyzed business requirements and participated in review meetings. Designed and developed responsive cross-platform web pages for Safari, Chrome, Firefox, and IE using HTML5, CSS3, Sass, and ES6. Ensured code quality and modularity according to client standards. Created and organized test cases with the Jasmine framework. Utilized NodeJS and npm extensively in the build process.",
+        "links": [
+          "React",
+          "Node",
+          "Recon",
+          "Orbit",
+          "ES6",
+          "TypeScript",
+          "Jasmine",
+          "Gulp"
         ],
-        "techStacks": ["Angular","Apple","Bamboo","BitBucket","Bootstrap","Bulma","CSharp","CSS3","Express",
-        "Git","GitHub","GoogleCloud","HTML5","IntelliJIDEA","Jasmine","JavaScript","Jira","jQuery",
-        "LaTeX","Linux","NETCore","Nodejs","Nodemon","NPM","NuGet","ObjectiveC","Oracle",
-        "Python","RabbitMQ","Reacter","Redux","Splunk","SQLDeveloper","TypeScript"],
-        "projects": [
-          {
-            "key": 11,
-            "name": "Checkout Redesign",
-            "client": "Apple",
-            "description": "The project aimed to enhance Apple’s website UI by making it faster, easier to use, and feature-rich. We used CanJS for merchandise pages and CoherentJS for transaction pages. Later, we proposed redesigning key transaction pages—Checkout, Shipping, Payment, and Confirmation—using ReactJS, JSX, and ECMAScript 6.",
-            "links": []
-          },
-          {
-            "key": 12,
-            "name": "Flight Data Monitoring",
-            "client": "SIUC Aviation",
-            "description": "A web application that was created to gather student pilots data and perform analysis and grade the students. Incidents such as HardLanding and NearMiss incidents could be corrected and help students in a better way.",
-            "links": []
-          },
-          {
-            "key": 13,
-            "name": "Performance Reporting Platform",
-            "client": "Charles Schwab",
-            "description": "The project involved developing a back-end application to evaluate portfolio performance against standard benchmarks. We transitioned legacy backend components to a pipeline-based architecture, utilizing .NET Core and MongoDB for the backend.",
-            "links": []
-          },
-          {
-            "key": 14,
-            "name": "Xva Manager",
-            "client": "Deutsche Bank",
-            "description": "In-house tool for trade extraction, selection, and reference data enrichment, used before sending data to the Risk Finder for assessment. It’s a legacy application with WCF technology, WPF front end, and Oracle Database.",
-            "links": []
-          }
+        "technologies": ["", "", ""]
+      },
+      {
+        "key": 2,
+        "timeline": "APR-20 to OCT-22",
+        "designation": "Software Developer",
+        "company": "Charles Schwab",
+        "summary": "Participated in Agile development, attending daily stand-ups and sprint ceremonies. Collaborated with the Product Owner to understand requirements, designed and proposed solutions, and implemented approved designs. Conducted code reviews, wrote unit and integration tests, and optimized code with QA feedback. Used Bitbucket for version control, verified builds on Bamboo, addressed Veracode scan issues, and deployed services on Harness. Managed PCF cloud instances post-deployment and supported offshore teams.",
+        "links": [
+          "Angular",
+          ".NET Core",
+          "Mongo DB",
+          "Aerospike",
+          "Postman",
+          "Parasoft SOA",
+          "Control-M",
+          "Rabbit-MQ",
+          "Splunk",
+          "Visual Studio",
+          "Bamboo"
         ],
-        "footnotes": "This page is created with the help of libraries such as React, Bootstrap, FontAwesome and MD5 Animations. It also uses tech icons and icons from font awesome library. This is coded in VS Code editor and deployed using GithubPages and Heroku."
-    }
+        "technologies": ["", "", ""]
+      },
+      {
+        "key": 3,
+        "timeline": "OCT-22 to PRESENT",
+        "designation": "Java Engineer",
+        "company": "Deutsche Bank",
+        "summary": "Developed an in-house tool for value adjustments, trade extraction, selection, and reference data enrichment for Deutsche Bank's counterparties, integrating it with a risk assessment tool. Successfully decommissioned the Gravity tool, saving the company 300K Euros.",
+        "links": [
+          ".NET Framework",
+          ".NET Core",
+          "WPF",
+          "WCF",
+          "Oracle",
+          "Postman",
+          "TeamCity",
+          "UDeploy",
+          "Visual Studio",
+          "Solace Queue",
+          "CRON Triggers"
+        ],
+        "technologies": ["", "", ""]
+      }
+    ],
+    "techStacks": [
+      { "name": "Angular", "category": "Framework" },
+      { "name": "Apple", "category": "Tools" },
+      { "name": "Bamboo", "category": "Tools" },
+      { "name": "BitBucket", "category": "Tools" },
+      { "name": "Bootstrap", "category": "Frameworks" },
+      { "name": "Bulma", "category": "Frameworks" },
+      { "name": "C", "category": "Languages" },
+      { "name": "CSharp", "category": "Languages" },
+      { "name": "CSS3", "category": "Languages" },
+      { "name": "Express", "category": "Frameworks" },
+      { "name": "Git", "category": "Languages" },
+      { "name": "GitHub", "category": "Tools" },
+      { "name": "GoogleCloud", "category": "Tools" },
+      { "name": "HTML5", "category": "Languages" },
+      { "name": "IntelliJIDEA", "category": "Tools" },
+      { "name": "Jasmine", "category": "Frameworks" },
+      { "name": "JavaScript", "category": "Languages" },
+      { "name": "Jira", "category": "Tools" },
+      { "name": "jQuery", "category": "Frameworks" },
+      { "name": "LaTeX", "category": "Languages" },
+      { "name": "Linux", "category": "Tools" },
+      { "name": "MongoDB", "category": "Languages" },
+      { "name": "NETCore", "category": "Frameworks" },
+      { "name": "Node", "category": "Frameworks" },
+      { "name": "Nodemon", "category": "Tools" },
+      { "name": "NPM", "category": "Frameworks" },
+      { "name": "NuGet", "category": "Frameworks" },
+      { "name": "ObjectiveC", "category": "Languages" },
+      { "name": "Oracle", "category": "Languages" },
+      { "name": "Postman", "category": "Tools" },
+      { "name": "Python", "category": "Languages" },
+      { "name": "RabbitMQ", "category": "Tools" },
+      { "name": "Reacter", "category": "Frameworks" },
+      { "name": "Redux", "category": "Frameworks" },
+      { "name": "Sass", "category": "Languages" },
+      { "name": "Splunk", "category": "Tools" },
+      { "name": "SQLDeveloper", "category": "Tools" },
+      { "name": "Swagger", "category": "Tools" },
+      { "name": "TypeScript", "category": "Languages" },
+      { "name": "Ubuntu", "category": "Tools" },
+      { "name": "VisualStudio", "category": "Tools" },
+      { "name": "VSCode", "category": "Tools" }
+    ],
+    "projects": [
+      {
+        "key": 11,
+        "name": "Checkout Redesign",
+        "client": "Apple",
+        "description": "The project aimed to enhance Apple’s website UI by making it faster, easier to use, and feature-rich. We used CanJS for merchandise pages and CoherentJS for transaction pages. Later, we proposed redesigning key transaction pages—Checkout, Shipping, Payment, and Confirmation—using ReactJS, JSX, and ECMAScript 6.",
+        "links": []
+      },
+      {
+        "key": 12,
+        "name": "Flight Data Monitoring",
+        "client": "SIUC Aviation",
+        "description": "A web application that was created to gather student pilots data and perform analysis and grade the students. Incidents such as HardLanding and NearMiss incidents could be corrected and help students in a better way.",
+        "links": []
+      },
+      {
+        "key": 13,
+        "name": "Performance Reporting Platform",
+        "client": "Charles Schwab",
+        "description": "The project involved developing a back-end application to evaluate portfolio performance against standard benchmarks. We transitioned legacy backend components to a pipeline-based architecture, utilizing .NET Core and MongoDB for the backend.",
+        "links": []
+      },
+      {
+        "key": 14,
+        "name": "Xva Manager",
+        "client": "Deutsche Bank",
+        "description": "In-house tool for trade extraction, selection, and reference data enrichment, used before sending data to the Risk Finder for assessment. It’s a legacy application with WCF technology, WPF front end, and Oracle Database.",
+        "links": []
+      }
+    ],
+    "footnotes": "This page is created with the help of libraries such as React, Bootstrap, FontAwesome and MD5 Animations. It also uses tech icons and icons from font awesome library. This is coded in VS Code editor and deployed using GithubPages and Heroku."
+  }
 }
-
-
-
