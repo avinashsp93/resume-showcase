@@ -68,3 +68,9 @@
   color: var(--color-heading);
   transform: scale(1.25);
 }
+
+@media (max-width: 1000px) {
+  #footer {
+    display: none;
+  }
+}
