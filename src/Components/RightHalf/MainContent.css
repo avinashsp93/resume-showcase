@@ -64,6 +64,11 @@
 }
 
 .tech-links a {
+  cursor: default;
+  pointer-events: none;
+}
+
+.tech-links a {
   text-decoration: none;
 }
 
