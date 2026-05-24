@@ -13,7 +13,7 @@ function Project(props: any) {
       <div className="col-md-4 text-center text-uppercase">
         <h6>{project.name}</h6>
       </div>
-      <div className="col-sm-8">
+      <div className="col-md-8">
         <h5>
           {project.name} - {project.client}
         </h5>

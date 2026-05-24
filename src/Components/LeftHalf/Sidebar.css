@@ -45,7 +45,7 @@
 .footer {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -67,4 +67,10 @@
 .footer a:hover {
   color: var(--color-heading);
   transform: scale(1.25);
+}
+
+@media (max-width: 1000px) {
+  #footer {
+    display: none;
+  }
 }

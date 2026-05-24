@@ -3,9 +3,9 @@ import Biography from "./B_Biography";
 import Experience from "./C_Experience";
 import TechStack from "./F_TechStack";
 import Project from "./E_Project";
-import { useData } from "../../contexts/DataContext";
 import Footer from "../LeftHalf/C_Footer";
 import FootNotes from "./G_FootNotes";
+import { useData } from "../../contexts/DataContext";
 
 function MainContent() {
   const { rightHalf } = useData();
@@ -34,7 +34,7 @@ function MainContent() {
       <section id="small-screen-footer">
         <Footer />
       </section>
-      <section id="footer">
+      <section id="footer" className="no-border-bottom">
         <FootNotes footnotes={rightHalf.footnotes} />
       </section>
     </div>
