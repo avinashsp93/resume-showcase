@@ -53,7 +53,7 @@
       {
         "key": 1,
         "timeline": "SEP-15 to DEC-17",
-        "designation": "Web Developer",
+        "designation": "Senior System Engineer",
         "company": "Infosys Technologies",
         "summary": "Analyzed business requirements and participated in review meetings. Designed and developed responsive cross-platform web pages for Safari, Chrome, Firefox, and IE using HTML5, CSS3, Sass, and ES6. Ensured code quality and modularity according to client standards. Created and organized test cases with the Jasmine framework. Utilized NodeJS and npm extensively in the build process.",
         "links": [
@@ -71,7 +71,7 @@
       {
         "key": 2,
         "timeline": "APR-20 to OCT-22",
-        "designation": "Software Developer",
+        "designation": "Specialist SDE",
         "company": "Charles Schwab",
         "summary": "Participated in Agile development, attending daily stand-ups and sprint ceremonies. Collaborated with the Product Owner to understand requirements, designed and proposed solutions, and implemented approved designs. Conducted code reviews, wrote unit and integration tests, and optimized code with QA feedback. Used Bitbucket for version control, verified builds on Bamboo, addressed Veracode scan issues, and deployed services on Harness. Managed PCF cloud instances post-deployment and supported offshore teams.",
         "links": [
@@ -92,7 +92,7 @@
       {
         "key": 3,
         "timeline": "OCT-22 to PRESENT",
-        "designation": "Java Engineer",
+        "designation": "Associate SDE",
         "company": "Deutsche Bank",
         "summary": "Worked on multiple financial applications delivering real-time insights and trade processing capabilities. Contributed to an in-house legacy application built with WCF, WPF, and Oracle Database for trade extraction, selection, and reference data enrichment before risk assessment processing. Developed and enhanced a React 18 and TDS-based dashboard hosted on Autobahn Publishing Portal, providing users with real-time visibility into funding memos, global loan maturities, and customizable deal and entity tracking sourced from DCMS. Also contributed to the Cash and Securities Portfolio (CaSP) platform built with React, Java, and PostgreSQL on GCP, enabling real-time monitoring of the bank’s cash and securities positions to support informed financial decision-making.",
         "links": [
