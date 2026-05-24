@@ -121,7 +121,6 @@
     ],
     "techStacks": [
       { "name": "Angular", "category": "Framework" },
-      { "name": "Apple", "category": "Tools" },
       { "name": "BitBucket", "category": "Tools" },
       { "name": "Bootstrap", "category": "Frameworks" },
       { "name": "Bulma", "category": "Frameworks" },
@@ -130,6 +129,7 @@
       { "name": "CSS3", "category": "Languages" },
       { "name": "GitHub", "category": "Tools" },
       { "name": "GoogleCloud", "category": "Tools" },
+      { "name": "Gemini", "category": "Tools" },
       { "name": "HTML5", "category": "Languages" },
       { "name": "IntelliJIDEA", "category": "Tools" },
       { "name": "JavaScript", "category": "Languages" },

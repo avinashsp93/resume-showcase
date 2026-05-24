@@ -12,7 +12,8 @@ const mouseMovedEvent = (event: MouseEvent) => {
   const x = event.pageX;
   const y = event.pageY;
   if (rootElement) {
-    rootElement.style.backgroundImage = `radial-gradient(500px at ${x}px ${y}px, rgba(56, 61, 114, 0.70), transparent 70%)`;
+    rootElement.style.backgroundImage = `radial-gradient(500px at ${x}px ${y}px, 
+    rgba(56, 61, 114, 0.70), transparent 70%)`;
     // More a component in rgba color => brighter spot
     // more transparency % => bigger visible radius of torch
   }

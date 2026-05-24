@@ -30,8 +30,15 @@
     width: 100%;
   }
 
-  #navigator,
-  #footer {
+  #navigator {
     display: none;
+  }
+
+  #footer {
+    border-bottom: none;
+  }
+
+  #footer p {
+    text-align: center;
   }
 }
