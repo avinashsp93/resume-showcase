@@ -1,7 +1,7 @@
 {
   "leftHalf": {
     "name": "Avinash Sorab",
-    "tagline": "Software Engineer | Table Tennis Enthusiast",
+    "tagline": "Software Engineer | Table Tennis Player",
     "navigators": ["Contact", "About", "Experience", "Tech Stacks", "Projects"],
     "footer": [
       {
@@ -48,7 +48,7 @@
       "email": "avinashsp93@gmail.com",
       "resume": "https://drive.google.com/file/d/1CZcCyUwt-fxxa68AHzum6Y7ttd7a2Tjn/view"
     },
-    "biography": "My career journey started at Infosys Technologies in India, where I worked as a front-end web developer for Apple, and continued at Charles Schwab as a back-end engineer before joining Deutsche Bank. I'm passionate about staying at the forefront of technology and enjoy the challenges it brings. Outside of work, I'm dedicated to table tennis, where I've turned my enthusiasm into skill through consistent practice and competition. Balancing my professional life with my love for the sport, I also make time to travel and stay fit.",
+    "biography": "My career began at Infosys, where I worked as a front-end developer supporting Apple, before moving into back-end engineering at Charles Schwab and later joining Deutsche Bank. I enjoy building scalable applications, exploring modern technologies, and solving complex engineering challenges. Beyond work, I’m passionate about table tennis and have developed my skills through regular practice and competition. I also enjoy traveling, staying active, and maintaining a balanced lifestyle.",
     "experiences": [
       {
         "key": 1,
