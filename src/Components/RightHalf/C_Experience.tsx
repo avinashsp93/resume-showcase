@@ -14,7 +14,7 @@ function Experience(props: any) {
       <div className="col-md-12 col-lg-4 text-center">
         <h6>{experience.timeline}</h6>
       </div>
-      <div className="col-md-12 col-lg-8 text-justify">
+      <div className="col-md-12 col-lg-8">
         <h5>
           {experience.designation} &#x2022; {experience.company}
         </h5>

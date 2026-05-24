@@ -56,13 +56,22 @@ function TechStack() {
   return (
     <div className="tech-stack">
       <ul>
-        <li className="h6 text-uppercase" onClick={handleOptionSelected}>
+        <li
+          className={`h6 text-uppercase ${isActiveLanguages ? "active" : ""}`}
+          onClick={handleOptionSelected}
+        >
           Languages
         </li>
-        <li className="h6 text-uppercase" onClick={handleOptionSelected}>
+        <li
+          className={`h6 text-uppercase ${isActiveFrameworks ? "active" : ""}`}
+          onClick={handleOptionSelected}
+        >
           Frameworks
         </li>
-        <li className="h6 text-uppercase" onClick={handleOptionSelected}>
+        <li
+          className={`h6 text-uppercase ${isActiveTools ? "active" : ""}`}
+          onClick={handleOptionSelected}
+        >
           Tools
         </li>
       </ul>
