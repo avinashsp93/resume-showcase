@@ -10,7 +10,7 @@ function Project(props: any) {
 
   return (
     <div className="project row m-2 p-2">
-      <div className="col-sm-4 text-center text-uppercase">
+      <div className="col-md-4 text-center text-uppercase">
         <h6>{project.name}</h6>
       </div>
       <div className="col-sm-8">

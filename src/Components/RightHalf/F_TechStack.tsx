@@ -18,29 +18,39 @@ function TechStack() {
   var _useState4 = useState(false),
     isActiveTools = _useState4[0],
     setIsActiveTools = _useState4[1];
+  var _useState5 = useState(false),
+    isFading = _useState5[0],
+    setIsFading = _useState5[1];
 
   function handleOptionSelected(event: any) {
     var option = event.target.innerHTML;
 
-    switch (option) {
-      case "Languages":
-        setIsActiveLanguages(true);
-        setIsActiveFrameworks(false);
-        setIsActiveTools(false);
-        break;
-      case "Frameworks":
-        setIsActiveLanguages(false);
-        setIsActiveFrameworks(true);
-        setIsActiveTools(false);
-        break;
-      case "Tools":
-        setIsActiveLanguages(false);
-        setIsActiveFrameworks(false);
-        setIsActiveTools(true);
-        break;
-      default:
-        break;
-    }
+    // Trigger fade-out
+    setIsFading(true);
+
+    // Wait for fade-out animation to complete, then switch category and fade back in
+    setTimeout(() => {
+      switch (option) {
+        case "Languages":
+          setIsActiveLanguages(true);
+          setIsActiveFrameworks(false);
+          setIsActiveTools(false);
+          break;
+        case "Frameworks":
+          setIsActiveLanguages(false);
+          setIsActiveFrameworks(true);
+          setIsActiveTools(false);
+          break;
+        case "Tools":
+          setIsActiveLanguages(false);
+          setIsActiveFrameworks(false);
+          setIsActiveTools(true);
+          break;
+        default:
+          break;
+      }
+      setIsFading(false);
+    }, 300); // Match the CSS transition duration
   }
 
   return (
@@ -56,7 +66,7 @@ function TechStack() {
           Tools
         </li>
       </ul>
-      <div className="tech-icons-container">
+      <div className={`tech-icons-container ${isFading ? "fading-out" : ""}`}>
         {techStacks.map(function (techStackSvg) {
           if (
             (isActiveLanguages && techStackSvg.category === "Languages") ||
@@ -68,6 +78,7 @@ function TechStack() {
                 key={techStackSvg.name}
                 src={`./../../src/images/${techStackSvg.name}.svg`}
                 alt="Tech Stack"
+                title={techStackSvg.name}
               />
             );
           }

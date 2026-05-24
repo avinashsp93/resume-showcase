@@ -5,13 +5,13 @@ import Footer from "./C_Footer";
 function Sidebar() {
   return (
     <div>
-      <section>
+      <section id="intro">
         <Intro />
       </section>
-      <section>
+      <section id="navigator">
         <Navigator />
       </section>
-      <section>
+      <section id="footer">
         <Footer />
       </section>
     </div>

@@ -5,16 +5,19 @@ function Footer() {
     leftHalf: { footer },
   } = useData();
   return (
-    <div className="footer text-center fs-4">
+    <div className="footer text-center">
       {footer.map((link, index) => (
-        <a
-          key={index}
-          href={link.url}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <i className={link.icon} />
-        </a>
+        <div key={index} className="icon-box">
+          <a
+            key={index}
+            href={link.url}
+            target="_blank"
+            rel="noreferrer"
+            title={link.name}
+          >
+            <i className={link.icon} />
+          </a>
+        </div>
       ))}
     </div>
   );

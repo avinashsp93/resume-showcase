@@ -4,12 +4,13 @@ import Experience from "./C_Experience";
 import TechStack from "./F_TechStack";
 import Project from "./E_Project";
 import { useData } from "../../contexts/DataContext";
+import Footer from "../LeftHalf/C_Footer";
 
 function MainContent() {
   const { rightHalf } = useData();
 
   return (
-    <div className="right-half">
+    <div>
       <section id="contact">
         <Contact />
       </section>
@@ -28,6 +29,9 @@ function MainContent() {
         {rightHalf.projects.map(function (project: any) {
           return <Project key={project.key} projKey={project.key} />;
         })}
+      </section>
+      <section id="small-screen-footer">
+        <Footer />
       </section>
     </div>
   );

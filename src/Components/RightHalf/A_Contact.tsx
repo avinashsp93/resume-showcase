@@ -32,6 +32,8 @@ function Contact() {
           <a href={resume} target="_blank" rel="noopener noreferrer">
             Resume
           </a>
+          <span>&nbsp;</span>
+          <i className="fas fa-file-pdf" />
         </li>
       </ul>
     </div>

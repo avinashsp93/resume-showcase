@@ -5,30 +5,37 @@
     "navigators": ["Contact", "About", "Experience", "Tech Stacks", "Projects"],
     "footer": [
       {
+        "name": "LinkedIn",
         "url": "https://www.linkedin.com/in/avinash-sorab-876a56a5/",
         "icon": "fa-brands fa-linkedin"
       },
       {
+        "name": "GitHub",
         "url": "https://github.com/avinashsp93",
         "icon": "fa-brands fa-github"
       },
       {
+        "name": "Skills - Google Cloud",
         "url": "https://www.skills.google/public_profiles/3013aa44-6871-4cf5-8134-f8258208c79a",
         "icon": "fa-solid fa-cloud"
       },
       {
+        "name": "CodePen",
         "url": "https://codepen.io/avinashsp93/",
         "icon": "fa-brands fa-codepen"
       },
       {
+        "name": "HackerRank",
         "url": "https://www.hackerrank.com/profile/avinashsp93",
         "icon": "fa-brands fa-hackerrank"
       },
       {
+        "name": "LeetCode",
         "url": "https://leetcode.com/u/avinashsp93/",
         "icon": "fa-brands fa-leetcode"
       },
       {
+        "name": "Stack Overflow",
         "url": "https://stackoverflow.com/users/5646079/avinash-sorab",
         "icon": "fa-brands fa-stack-overflow"
       }
@@ -39,7 +46,7 @@
       "location": "Cary, NC",
       "phone": "+1(618)353-4297",
       "email": "avinashsp93@gmail.com",
-      "resume": "External Link"
+      "resume": "https://drive.google.com/file/d/1CZcCyUwt-fxxa68AHzum6Y7ttd7a2Tjn/view"
     },
     "biography": "My career journey started at Infosys Technologies in India, where I worked as a front-end web developer for Apple, and continued at Charles Schwab as a back-end engineer before joining Deutsche Bank. I'm passionate about staying at the forefront of technology and enjoy the challenges it brings. Outside of work, I'm dedicated to table tennis, where I've turned my enthusiasm into skill through consistent practice and competition. Balancing my professional life with my love for the sport, I also make time to travel and stay fit.",
     "experiences": [
@@ -87,7 +94,7 @@
         "timeline": "OCT-22 to PRESENT",
         "designation": "Java Engineer",
         "company": "Deutsche Bank",
-        "summary": "Developed an in-house tool for value adjustments, trade extraction, selection, and reference data enrichment for Deutsche Bank's counterparties, integrating it with a risk assessment tool. Successfully decommissioned the Gravity tool, saving the company 300K Euros.",
+        "summary": "Worked on multiple financial applications delivering real-time insights and trade processing capabilities. Contributed to an in-house legacy application built with WCF, WPF, and Oracle Database for trade extraction, selection, and reference data enrichment before risk assessment processing. Developed and enhanced a React 18 and TDS-based dashboard hosted on Autobahn Publishing Portal, providing users with real-time visibility into funding memos, global loan maturities, and customizable deal and entity tracking sourced from DCMS. Also contributed to the Cash and Securities Portfolio (CaSP) platform built with React, Java, and PostgreSQL on GCP, enabling real-time monitoring of the bank’s cash and securities positions to support informed financial decision-making.",
         "links": [
           ".NET Framework",
           ".NET Core",
@@ -128,7 +135,7 @@
       { "name": "Linux", "category": "Tools" },
       { "name": "MongoDB", "category": "Languages" },
       { "name": "NETCore", "category": "Frameworks" },
-      { "name": "Node", "category": "Frameworks" },
+      { "name": "Nodejs", "category": "Frameworks" },
       { "name": "Nodemon", "category": "Tools" },
       { "name": "NPM", "category": "Frameworks" },
       { "name": "NuGet", "category": "Frameworks" },
@@ -175,6 +182,20 @@
         "name": "Xva Manager",
         "client": "Deutsche Bank",
         "description": "In-house tool for trade extraction, selection, and reference data enrichment, used before sending data to the Risk Finder for assessment. It’s a legacy application with WCF technology, WPF front end, and Oracle Database.",
+        "links": []
+      },
+      {
+        "key": 15,
+        "name": "TSS Dashboard",
+        "client": "Deutsche Bank",
+        "description": "A dashboard that provides real-time insights that includes funding-memoes, global loan maturities and lets user customize their favorite deals and entities sourced from DCMS. It is built using React 18 and TDS, hosted on Autobahn Publishing Portal.",
+        "links": []
+      },
+      {
+        "key": 16,
+        "name": "CaSP",
+        "client": "Deutsche Bank",
+        "description": "Cash and Securities Portfolio (CaSP) is a tool that provides real-time insights into the bank's cash and securities positions, enabling users to make informed decisions. It is built using React, Java and PostgreSQL, hosted on GCP",
         "links": []
       }
     ],

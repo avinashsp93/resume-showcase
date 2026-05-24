@@ -11,10 +11,10 @@ function Experience(props: any) {
 
   return (
     <div className="experience row">
-      <div className="col-sm-12 col-md-4 text-center">
+      <div className="col-md-12 col-lg-4 text-center">
         <h6>{experience.timeline}</h6>
       </div>
-      <div className="col-sm-12 col-md-8 text-justify">
+      <div className="col-md-12 col-lg-8 text-justify">
         <h5>
           {experience.designation} &#x2022; {experience.company}
         </h5>

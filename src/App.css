@@ -7,7 +7,7 @@
 }
 
 .sidebar {
-  flex: 1;
+  flex: 2;
   position: sticky;
   position: -webkit-sticky;
   align-self: flex-start;
@@ -16,12 +16,22 @@
 
 .main-content {
   flex: 3;
-  /* position: relative; */
 }
 
 /* Below 1000px width, stack sidebar and main-content vertically */
 @media (max-width: 1000px) {
   .container {
     flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+    top: auto;
+    width: 100%;
+  }
+
+  #navigator,
+  #footer {
+    display: none;
   }
 }
