@@ -4,5 +4,5 @@ import babel from "@rolldown/plugin-babel";
 
 export default defineConfig({
   plugins: [react(), babel({ presets: [reactCompilerPreset()] })],
-  base: "/resume-showcase/",
+  base: process.env.NODE_ENV === "production" ? "/resume-showcase/" : "/",
 });

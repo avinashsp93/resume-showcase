@@ -51,7 +51,7 @@ function TechStack() {
                 className={`tech-icon ${isActiveLanguages ? "fading-in" : "fading-out"}`}
               >
                 <img
-                  src={`/assets/${tech.name}.svg`}
+                  src={`${import.meta.env.BASE_URL}assets/${tech.name}.svg`}
                   alt={tech.name}
                   title={tech.name}
                 />
@@ -67,7 +67,7 @@ function TechStack() {
                 className={`tech-icon ${isActiveFrameworks ? "fading-in" : "fading-out"}`}
               >
                 <img
-                  src={`/assets/${tech.name}.svg`}
+                  src={`${import.meta.env.BASE_URL}assets/${tech.name}.svg`}
                   alt={tech.name}
                   title={tech.name}
                 />
@@ -83,7 +83,7 @@ function TechStack() {
                 className={`tech-icon ${isActiveTools ? "fading-in" : "fading-out"}`}
               >
                 <img
-                  src={`/assets/${tech.name}.svg`}
+                  src={`${import.meta.env.BASE_URL}assets/${tech.name}.svg`}
                   alt={tech.name}
                   title={tech.name}
                 />
