@@ -118,6 +118,12 @@ p {
   text-align: justify;
 }
 
+/* FOOTER SECTION */
+
+.footnotes p {
+  font-size: 11px;
+}
+
 @media (min-width: 1000px) {
   #small-screen-footer {
     display: none;

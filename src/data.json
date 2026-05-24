@@ -106,7 +106,15 @@
           "UDeploy",
           "Visual Studio",
           "Solace Queue",
-          "CRON Triggers"
+          "CRON Triggers",
+          "GCP",
+          "React 19",
+          "TDS",
+          "Autobahn",
+          "IntelliJ IDEA",
+          "Github Workflows",
+          "PostgreSQL",
+          "OpenJDK 21"
         ],
         "technologies": ["", "", ""]
       }
@@ -199,6 +207,9 @@
         "links": []
       }
     ],
-    "footnotes": "This page is created with the help of libraries such as React, Bootstrap, FontAwesome and MD5 Animations. It also uses tech icons and icons from font awesome library. This is coded in VS Code editor and deployed using GithubPages and Heroku."
+    "footnotes": {
+      "text": "Built from the ground up with React, Bootstrap, and Font Awesome, with attention to smooth animations, clean UI, and responsive design. Deployed using modern cloud workflows.",
+      "copyright": "© 2026 Avinash Sorab"
+    }
   }
 }

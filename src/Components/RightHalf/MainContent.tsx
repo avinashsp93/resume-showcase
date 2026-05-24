@@ -5,6 +5,7 @@ import TechStack from "./F_TechStack";
 import Project from "./E_Project";
 import { useData } from "../../contexts/DataContext";
 import Footer from "../LeftHalf/C_Footer";
+import FootNotes from "./G_FootNotes";
 
 function MainContent() {
   const { rightHalf } = useData();
@@ -32,6 +33,9 @@ function MainContent() {
       </section>
       <section id="small-screen-footer">
         <Footer />
+      </section>
+      <section id="footer">
+        <FootNotes footnotes={rightHalf.footnotes} />
       </section>
     </div>
   );
