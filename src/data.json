@@ -120,13 +120,15 @@
       }
     ],
     "techStacks": [
-      { "name": "Angular", "category": "Framework" },
+      { "name": "Angular", "category": "Frameworks" },
       { "name": "BitBucket", "category": "Tools" },
       { "name": "Bootstrap", "category": "Frameworks" },
       { "name": "Bulma", "category": "Frameworks" },
       { "name": "C", "category": "Languages" },
       { "name": "CSharp", "category": "Languages" },
       { "name": "CSS3", "category": "Languages" },
+      { "name": "Docker", "category": "Tools" },
+      { "name": "Figma", "category": "Tools" },
       { "name": "GitHub", "category": "Tools" },
       { "name": "GoogleCloud", "category": "Tools" },
       { "name": "Gemini", "category": "Tools" },
@@ -137,6 +139,7 @@
       { "name": "NETCore", "category": "Frameworks" },
       { "name": "Nodejs", "category": "Frameworks" },
       { "name": "ObjectiveC", "category": "Languages" },
+      { "name": "Office365", "category": "Tools" },
       { "name": "Postman", "category": "Tools" },
       { "name": "Python", "category": "Languages" },
       { "name": "RabbitMQ", "category": "Tools" },
@@ -144,11 +147,12 @@
       { "name": "Redux", "category": "Frameworks" },
       { "name": "Sass", "category": "Languages" },
       { "name": "Splunk", "category": "Tools" },
+      { "name": "SpringBoot", "category": "Frameworks" },
       { "name": "SQLDeveloper", "category": "Tools" },
       { "name": "Swagger", "category": "Tools" },
       { "name": "TypeScript", "category": "Languages" },
-      { "name": "VisualStudio", "category": "Tools" },
-      { "name": "VSCode", "category": "Tools" }
+      { "name": "VSCode", "category": "Tools" },
+      { "name": "Yaml", "category": "Languages" }
     ],
     "projects": [
       {
