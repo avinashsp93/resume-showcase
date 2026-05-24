@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# Resume Showcase Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern personal portfolio built with React, TypeScript, and Vite. This project showcases a clean resume-style layout with a sidebar navigation, contact details, biography, experience history, technical skills, and featured projects.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This portfolio is a responsive single-page React application designed to highlight professional experience, skills, and project work. The layout is split into two sections:
 
-### `npm start`
+- **Left Sidebar**: personal name, tagline, quick navigation links, and social/profile icons.
+- **Right Main Content**: contact information, biography, work experience, technical stacks, projects, and footnotes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The content is data-driven and loaded from `src/data.json`, making it easy to update the portfolio details.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Key Features
 
-### `npm test`
+- Responsive portfolio layout with a fixed sidebar and main content area
+- Data-driven content from a structured JSON file
+- Clean resume-style presentation for experience, skills, and project highlights
+- Font Awesome icons for social links and section styling
+- Bootstrap-based styling for responsive layout and consistent UI
+- Built with React 19, TypeScript, and Vite
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- React 19
+- TypeScript
+- Vite
+- Bootstrap
+- Font Awesome
+- MDB React UI Kit
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `src/App.tsx` - main application layout
+- `src/index.js` - entry point and global stylesheet imports
+- `src/data.json` - portfolio content source for sidebar and main sections
+- `src/components/LeftHalf/` - sidebar components
+- `src/components/RightHalf/` - main portfolio content components
+- `src/index.css` / `src/App.css` - global and layout styles
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+### Requirements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Node.js 18+ recommended
+- npm
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Install Dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Run Locally
 
-## Learn More
+```bash
+npm run dev
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open the local Vite development URL shown in the terminal to preview the portfolio.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Build for Production
 
-### Code Splitting
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Deploy
 
-### Analyzing the Bundle Size
+A `deploy` script is provided for GitHub Pages deployment:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm run deploy
+```
 
-### Making a Progressive Web App
+## Content Included
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Personal profile details and professional tagline
+- Contact info, resume link, email, and location
+- Biography summary with highlights of career background and interests
+- Experience timeline for Infosys, Charles Schwab, and Deutsche Bank
+- Technical skill categories and toolset overview
+- Featured projects such as checkout redesign, flight data monitoring, performance reporting, Xva Manager, TSS Dashboard, and CaSP
+- Footer notes and copyright information
 
-### Advanced Configuration
+## Customization
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Update `src/data.json` to modify:
 
-### Deployment
+- name, tagline, and navigation labels
+- contact details and resume link
+- biography text
+- experience entries and technology stacks
+- project descriptions and client details
+- social links and icons
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Notes
 
-### `npm run build` fails to minify
+This portfolio is intended as a simple, maintainable showcase of professional experience and technical capabilities. It can be extended with additional sections, routing, or page transitions as needed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+© 2026 Avinash Sorab
