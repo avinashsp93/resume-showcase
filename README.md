@@ -1,75 +1,103 @@
-# React + TypeScript + Vite
+# Resume Showcase Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern personal portfolio built with React, TypeScript, and Vite. This project showcases a clean resume-style layout with a sidebar navigation, contact details, biography, experience history, technical skills, and featured projects.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio is a responsive single-page React application designed to highlight professional experience, skills, and project work. The layout is split into two sections:
 
-## React Compiler
+- **Left Sidebar**: personal name, tagline, quick navigation links, and social/profile icons.
+- **Right Main Content**: contact information, biography, work experience, technical stacks, projects, and footnotes.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+The content is data-driven and loaded from `src/data.json`, making it easy to update the portfolio details.
 
-Note: This will impact Vite dev & build performances.
+## Key Features
 
-## Expanding the ESLint configuration
+- Responsive portfolio layout with a fixed sidebar and main content area
+- Data-driven content from a structured JSON file
+- Clean resume-style presentation for experience, skills, and project highlights
+- Font Awesome icons for social links and section styling
+- Bootstrap-based styling for responsive layout and consistent UI
+- Built with React 19, TypeScript, and Vite
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React 19
+- TypeScript
+- Vite
+- Bootstrap
+- Font Awesome
+- MDB React UI Kit
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- `src/App.tsx` - main application layout
+- `src/index.js` - entry point and global stylesheet imports
+- `src/data.json` - portfolio content source for sidebar and main sections
+- `src/components/LeftHalf/` - sidebar components
+- `src/components/RightHalf/` - main portfolio content components
+- `src/index.css` / `src/App.css` - global and layout styles
+
+## Getting Started
+
+### Requirements
+
+- Node.js 18+ recommended
+- npm
+
+### Install Dependencies
+
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Run Locally
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
 ```
+
+Open the local Vite development URL shown in the terminal to preview the portfolio.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Deploy
+
+A `deploy` script is provided for GitHub Pages deployment:
+
+```bash
+npm run deploy
+```
+
+## Content Included
+
+- Personal profile details and professional tagline
+- Contact info, resume link, email, and location
+- Biography summary with highlights of career background and interests
+- Experience timeline for Infosys, Charles Schwab, and Deutsche Bank
+- Technical skill categories and toolset overview
+- Featured projects such as checkout redesign, flight data monitoring, performance reporting, Xva Manager, TSS Dashboard, and CaSP
+- Footer notes and copyright information
+
+## Customization
+
+Update `src/data.json` to modify:
+
+- name, tagline, and navigation labels
+- contact details and resume link
+- biography text
+- experience entries and technology stacks
+- project descriptions and client details
+- social links and icons
+
+## Notes
+
+This portfolio is intended as a simple, maintainable showcase of professional experience and technical capabilities. It can be extended with additional sections, routing, or page transitions as needed.
+
+---
+
+© 2026 Avinash Sorab
