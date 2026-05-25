@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import "./MainContent.css";
 
@@ -10,10 +10,6 @@ function TechStack() {
   } = useData();
 
   const [activeOption, setActiveOption] = useState("Languages");
-
-  useEffect(() => {
-    console.log(activeOption);
-  }, [activeOption]);
 
   const isActiveLanguages = activeOption === "Languages";
   const isActiveFrameworks = activeOption === "Frameworks";

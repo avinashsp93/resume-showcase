@@ -9,7 +9,6 @@ type SnackbarProps = {
 
 function Snackbar({ show, message, onClose }: SnackbarProps) {
   useEffect(() => {
-    console.log("Snackbar show:", show);
     if (show) {
       const timer = setTimeout(() => {
         onClose();

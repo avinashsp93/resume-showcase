@@ -1,4 +1,4 @@
-import { StrictMode, type MouseEvent as ReactMouseEvent } from "react";
+import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -19,7 +19,7 @@ const mouseMovedEvent = (event: MouseEvent) => {
   }
 };
 
-rootElement?.addEventListener("mousemove", mouseMovedEvent);
+rootElement?.addEventListener("mousemove", mouseMovedEvent as EventListener);
 
 createRoot(rootElement!).render(
   <StrictMode>
