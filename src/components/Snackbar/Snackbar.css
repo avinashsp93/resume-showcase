@@ -5,3 +5,18 @@
   font-size: 16px;
   font-weight: 500;
 }
+
+.show {
+  animation: fadeInFromSide 0.5s forwards;
+}
+
+@keyframes fadeInFromSide {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
