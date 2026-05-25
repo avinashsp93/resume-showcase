@@ -34,7 +34,8 @@
     display: none;
   }
 
-  #footer {
+  #footer,
+  #small-screen-footer {
     border-bottom: none;
   }
 

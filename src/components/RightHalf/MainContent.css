@@ -215,4 +215,10 @@ p {
   #resume {
     width: 80px;
   }
+
+  .language-container,
+  .framework-container,
+  .tool-container {
+    gap: 30px;
+  }
 }
