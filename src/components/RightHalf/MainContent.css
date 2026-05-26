@@ -144,12 +144,12 @@
 
 .fading-in {
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .fading-out {
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 /* PROJECTS SECTION */
