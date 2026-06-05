@@ -38,6 +38,11 @@
         "name": "Stack Overflow",
         "url": "https://stackoverflow.com/users/5646079/avinash-sorab",
         "icon": "fa-brands fa-stack-overflow"
+      },
+      {
+        "name": "Credly",
+        "url": "https://www.credly.com/users/avinash-sorab.54503557/badges#credly",
+        "icon": "fa-solid fa-c"
       }
     ]
   },
