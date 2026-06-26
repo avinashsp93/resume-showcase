@@ -2,6 +2,10 @@
 
 A modern personal portfolio built with React, TypeScript, and Vite. This project showcases a clean resume-style layout with a sidebar navigation, contact details, biography, experience history, technical skills, and featured projects.
 
+## Live URL
+
+https://avinashsp93.github.io/resume-showcase/
+
 ## Overview
 
 This portfolio is a responsive single-page React application designed to highlight professional experience, skills, and project work. The layout is split into two sections:
